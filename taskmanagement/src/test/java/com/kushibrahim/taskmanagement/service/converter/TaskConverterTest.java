@@ -1,6 +1,5 @@
 package com.kushibrahim.taskmanagement.service.converter;
 
-import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

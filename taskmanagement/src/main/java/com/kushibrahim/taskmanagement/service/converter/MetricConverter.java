@@ -20,7 +20,7 @@ public class MetricConverter {
                 metricDto.setMetricStartDate(metricEntity.getMetricStartDate());
                 metricDto.setMetricOriginalEndDate(metricEntity.getMetricOriginalEndDate());
                 metricDto.setMetricActualEndDate(metricEntity.getMetricActualEndDate());
-                metricDto.setMetricType(metricEntity.getMetricType().toString());
+                metricDto.setMetricType(metricEntity.getMetricType());
 
             }
             return (List<MetricDto>) metricDto;
@@ -33,12 +33,12 @@ public class MetricConverter {
         }
         else {
             MetricDto metricDto = new MetricDto();
-            metricDto.setMetricType(metricEntity.getMetricType().toString());
+            metricDto.setMetricType(metricEntity.getMetricType());
             metricDto.setMetricActualEndDate(metricEntity.getMetricActualEndDate());
             metricDto.setMetricOriginalEndDate(metricEntity.getMetricOriginalEndDate());
             metricDto.setMetricStartDate(metricEntity.getMetricStartDate());
             metricDto.setTaskID(metricEntity.getTaskID());
-            metricDto.setMetricType(metricEntity.getMetricType().toString());
+            metricDto.setMetricID(metricEntity.getMetricID());
 
             return metricDto;
         }

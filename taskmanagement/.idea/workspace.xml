@@ -92,7 +92,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projects/customer-api-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -104,7 +104,23 @@
       <recent name="com.kushibrahim.taskmanagement.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProcessConverterTest.convertToDtoNull">
+  <component name="RunManager" selected="Spring Boot.TaskmanagementApplication">
+    <configuration name="MetricConverterTest.convertToDtoNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskmanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kushibrahim.taskmanagement.service.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.service.converter" />
+      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.converter.MetricConverterTest" />
+      <option name="METHOD_NAME" value="convertToDtoNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessConverterTest.convertToDtoNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanagement" />
       <extension name="coverage">
@@ -130,6 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MetricConverterTest.convertToDtoNull" />
         <item itemvalue="JUnit.ProcessConverterTest.convertToDtoNull" />
       </list>
     </recent_temporary>
@@ -168,6 +185,7 @@
       <workItem from="1579846540669" duration="21711000" />
       <workItem from="1580193203689" duration="6585000" />
       <workItem from="1580215494006" duration="1071000" />
+      <workItem from="1580281991810" duration="893000" />
     </task>
     <servers />
   </component>
@@ -215,38 +233,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580216169346" />
-    <state width="1323" height="494" key="GridCell.Tab.0.bottom" timestamp="1580216580333">
+    <state width="1323" height="494" key="GridCell.Tab.0.bottom" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="494" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580216580333" />
-    <state width="1323" height="494" key="GridCell.Tab.0.center" timestamp="1580216580333">
+    <state width="1323" height="494" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.0.center" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="494" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580216580333" />
-    <state width="1323" height="494" key="GridCell.Tab.0.left" timestamp="1580216580333">
+    <state width="1323" height="494" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.0.left" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="494" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580216580333" />
-    <state width="1323" height="494" key="GridCell.Tab.0.right" timestamp="1580216580333">
+    <state width="1323" height="494" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.0.right" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="494" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580216580333" />
-    <state width="1323" height="432" key="GridCell.Tab.1.bottom" timestamp="1580199865086">
+    <state width="1323" height="494" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.1.bottom" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="432" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580199865086" />
-    <state width="1323" height="432" key="GridCell.Tab.1.center" timestamp="1580199865086">
+    <state width="1323" height="494" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.1.center" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="432" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580199865086" />
-    <state width="1323" height="432" key="GridCell.Tab.1.left" timestamp="1580199865086">
+    <state width="1323" height="494" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.1.left" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="432" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580199865086" />
-    <state width="1323" height="432" key="GridCell.Tab.1.right" timestamp="1580199865086">
+    <state width="1323" height="494" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
+    <state width="1323" height="494" key="GridCell.Tab.1.right" timestamp="1580282170169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="432" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580199865086" />
+    <state width="1323" height="494" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580282170169" />
     <state width="1323" height="432" key="GridCell.Tab.2.bottom" timestamp="1580199865087">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
