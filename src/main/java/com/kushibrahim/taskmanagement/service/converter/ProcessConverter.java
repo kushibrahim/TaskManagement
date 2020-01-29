@@ -3,18 +3,23 @@ package com.kushibrahim.taskmanagement.service.converter;
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Component
 public class ProcessConverter {
 
-    public List<ProcessDto> convertListProcessDto(List<ProcessEntity> processEntities){
-        if(!(processEntities.size()>0)){
-            return null;
-        }
-        else{
-            ProcessDto processDto = new ProcessDto();
-            for(ProcessEntity processEntity : processEntities){
+    public List<ProcessDto> convertListProcessDto(List<ProcessEntity> processEntities) {
+        if (CollectionUtils.isEmpty(processEntities)) {
+            return Collections.emptyList();
+        } else {
+            List<ProcessDto> processDtos = new ArrayList<>();
+            for (ProcessEntity processEntity : processEntities) {
+                ProcessDto processDto = new ProcessDto();
                 processDto.setProcessID(processEntity.getProcessID());
                 processDto.setProcessAssignee(processEntity.getProcessAssignee());
                 processDto.setProcessAssigneer(processEntity.getProcessAssigneer());
@@ -22,8 +27,9 @@ public class ProcessConverter {
                 processDto.setProcessStatus(processEntity.getProcessStatus());
                 processDto.setTeamLeadID(processEntity.getTeamLeadID());
 
+                processDtos.add(processDto);
             }
-            return (List<ProcessDto>) processDto;
+            return processDtos;
         }
     }
 
@@ -44,3 +50,4 @@ public class ProcessConverter {
         }
     }
 }
+
