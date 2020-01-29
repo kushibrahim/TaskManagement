@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/MetricConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/ProcessConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/TaskConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanagement.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X3qQKHz47L0851APNc9bfL3GQP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="TaskmanagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -20,30 +45,75 @@
       </method>
     </configuration>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="" />
+      <created>1580285108764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580285108764</updated>
+      <workItem from="1580285113045" duration="684000" />
+    </task>
+    <task id="LOCAL-00001" summary="refactors project structure">
+      <created>1580285354092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580285354092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactors project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactors project structure" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="0" key="CommitChangelistDialog2" timestamp="1580285282064">
+    <state x="205" y="0" key="CommitChangelistDialog2" timestamp="1580285348783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="205" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580285282064" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1580285215936">
+    <state x="205" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580285348783" />
+    <state width="1323" height="468" key="GridCell.Tab.0.bottom" timestamp="1580285486002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580285215936" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1580285215936">
+    <state width="1323" height="468" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580285486002" />
+    <state width="1323" height="468" key="GridCell.Tab.0.center" timestamp="1580285486001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580285215936" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1580285215936">
+    <state width="1323" height="468" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580285486001" />
+    <state width="1323" height="468" key="GridCell.Tab.0.left" timestamp="1580285486001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580285215936" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1580285215936">
+    <state width="1323" height="468" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580285486001" />
+    <state width="1323" height="468" key="GridCell.Tab.0.right" timestamp="1580285486001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580285215936" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580285234212">
+    <state width="1323" height="468" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580285486001" />
+    <state width="1323" height="468" key="GridCell.Tab.1.bottom" timestamp="1580285486002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580285234212" />
+    <state width="1323" height="468" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580285486002" />
+    <state width="1323" height="468" key="GridCell.Tab.1.center" timestamp="1580285486002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580285486002" />
+    <state width="1323" height="468" key="GridCell.Tab.1.left" timestamp="1580285486002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580285486002" />
+    <state width="1323" height="468" key="GridCell.Tab.1.right" timestamp="1580285486002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580285486002" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580285389311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580285389311" />
   </component>
 </project>
