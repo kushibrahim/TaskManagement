@@ -1,5 +1,6 @@
 package com.kushibrahim.taskmanagement.controller;
 
+import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.service.ProcessService;
 import org.springframework.web.bind.annotation.*;
@@ -17,18 +18,18 @@ public class ProcessController {
     }
 
     @GetMapping
-    public List<ProcessEntity> getAllProcess(){
+    public List<ProcessDto> getAllProcess(){
         return processService.getAllProcess();
     }
 
     @GetMapping("/{processId}")
-    public ProcessEntity getProcessById(@PathVariable Integer processId){
-        return processService.getProcessById(processId);
+    public ProcessDto getProcessById(@PathVariable Integer processId){
+        return processService.getProcess(processId);
     }
 
-    @PostMapping("/{processId}")
-    public void addProcess(@PathVariable Integer processId){
-        processService.addProcess(processId);
+    @PostMapping("/saveProcess")
+    public void saveProcess(@RequestBody ProcessEntity processEntity){
+        processService.saveProcess(processEntity);
     }
 
 }

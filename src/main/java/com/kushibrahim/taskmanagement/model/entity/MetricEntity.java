@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.kushibrahim.taskmanagement.model.enumerator.MetricType;
 import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -22,7 +23,7 @@ public class MetricEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "metricType", nullable = false)
-    private String metricType;
+    private MetricType metricType;
 
     @Column(name = "metricStartDate")
     @NotNull(message = "Metric Start Date is a required field.")

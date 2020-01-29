@@ -7,7 +7,7 @@ public interface TaskService {
 
     List<TaskDto> getAllTask();
     TaskDto getTaskById(Integer id);
-    void assigneeTask(Integer taskId, Integer assigneeId);
-    void updateTask(Integer taskId);
+    TaskDto assigneeTask(Integer taskId, Integer assigneeId);
+    TaskDto updateTask(Integer taskId);
 
 }

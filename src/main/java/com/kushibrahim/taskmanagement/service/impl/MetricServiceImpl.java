@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.service.impl;
 
 import com.kushibrahim.taskmanagement.model.dto.MetricDto;
+import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.repository.MetricRepository;
 import com.kushibrahim.taskmanagement.service.MetricService;
 import com.kushibrahim.taskmanagement.service.converter.MetricConverter;
@@ -10,8 +11,8 @@ import java.util.List;
 @Service
 public class MetricServiceImpl implements MetricService{
 
-    private MetricRepository metricRepository;
-    private MetricConverter metricConverter;
+    private final MetricRepository metricRepository;
+    private final MetricConverter metricConverter;
 
     public MetricServiceImpl(MetricRepository metricRepository, MetricConverter metricConverter) {
         this.metricRepository = metricRepository;
@@ -20,21 +21,20 @@ public class MetricServiceImpl implements MetricService{
 
     @Override
     public List<MetricDto> getAllMetric() {
-        List<MetricDto> metricEntityDto = metricConverter.convertListMetricEntityDto(metricRepository.findAll());
-        return metricEntityDto;
+        List<MetricDto> metricDto = metricConverter.convertListMetricDto(metricRepository.findAll());
+        return metricDto;
     }
 
     @Override
-    public MetricDto getMetricById(Integer metricId) {
-        MetricDto metricEntityDto = metricConverter.convertMetricEntityDto(metricRepository.getOne(metricId));
-        return metricEntityDto;
+    public MetricDto getMetric(Integer metricId) {
+        MetricDto metricDto = metricConverter.convertMetricDto(metricRepository.getOne(metricId));
+
+        return metricDto;
     }
 
     @Override
-    public MetricDto saveMetric(Integer metricId) {
-        MetricDto metricEntityDto2 = new MetricDto();
-        metricId = metricEntityDto2.getMetricID();
-        MetricDto metricEntityDto = metricConverter.convert(metricRepository.save(metricId));
-        return metricEntityDto;
+    public MetricDto saveMetric(MetricEntity metricEntity) {
+        MetricDto metricDto = metricConverter.convertMetricDto(metricRepository.save(metricEntity));
+        return metricDto;
     }
 }

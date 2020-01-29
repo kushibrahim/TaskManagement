@@ -1,7 +1,9 @@
 package com.kushibrahim.taskmanagement.controller;
 
+import com.kushibrahim.taskmanagement.model.dto.TaskDto;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,23 +19,22 @@ public class TaskController {
     }
 
     @GetMapping
-    public List<TaskEntity> getAllTask(){
+    public List<TaskDto> getAllTask(){
         return taskService.getAllTask();
     }
 
     @GetMapping("/{taskId}")
-    public TaskEntity getTaskById(@PathVariable Integer taskId){
+    public TaskDto getTaskById(@PathVariable Integer taskId){
         return taskService.getTaskById(taskId);
     }
 
     @PostMapping("/{taskId}/{assignee}")
-    public void assigneeTask(@PathVariable Integer taskId, @PathVariable Integer assigneeId){
-        taskService.assigneeTask(taskId, assigneeId);
+    public TaskDto assigneeTask(@PathVariable Integer taskId, @PathVariable Integer assigneeId){
+        return taskService.assigneeTask(taskId, assigneeId);
     }
 
     @PostMapping("/{taskId}")
-    public void updateTask(@PathVariable Integer taskId){
-        taskService.updateTask(taskId);
+    public TaskDto updateTask(@PathVariable Integer taskId){
+        return taskService.updateTask(taskId);
     }
-
 }
