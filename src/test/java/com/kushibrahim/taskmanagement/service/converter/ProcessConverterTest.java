@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.service.converter;
 
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,5 +23,10 @@ public class ProcessConverterTest {
     void convertToDtoNull(){
         final ProcessDto processDto = processConverter.convertProcessDto(null);
         assertNull(null);
+    }
+
+    @AfterEach
+    void tearDown(){
+        processConverter = null;
     }
 }

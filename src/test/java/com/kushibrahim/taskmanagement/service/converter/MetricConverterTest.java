@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.service.converter;
 
 import com.kushibrahim.taskmanagement.model.dto.MetricDto;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,5 +23,10 @@ public class MetricConverterTest {
     void convertToDtoNull(){
         final MetricDto metricDto = metricConverter.convertMetricDto(null);
         assertNull(null);
+    }
+
+    @AfterEach
+    void tearDown(){
+        metricConverter = null;
     }
 }
