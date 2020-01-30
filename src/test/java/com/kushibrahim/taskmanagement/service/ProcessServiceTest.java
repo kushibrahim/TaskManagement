@@ -1,9 +1,8 @@
 package com.kushibrahim.taskmanagement.service;
 
-import com.kushibrahim.taskmanagement.converter.ProcessConverter;
+import com.kushibrahim.taskmanagement.service.converter.ProcessConverter;
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
-import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import com.kushibrahim.taskmanagement.repository.ProcessRepository;
 import com.kushibrahim.taskmanagement.service.impl.ProcessServiceImpl;

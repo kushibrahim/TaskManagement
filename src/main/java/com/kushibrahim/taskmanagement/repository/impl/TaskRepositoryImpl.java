@@ -1,6 +1,8 @@
 package com.kushibrahim.taskmanagement.repository.impl;
 
+import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
 import org.hibernate.Session;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
@@ -20,16 +22,28 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
     @Override
     public TaskEntity assigneeTask(Integer taskId, Integer assigneeId) {
         Session session = entityManager.unwrap(Session.class);
+        TaskEntity taskEntity = session.get(TaskEntity.class,taskId);
+        //Features will be added.
 
-        //return assigneeTask(taskId,assigneeId);
-        return null;
+        return taskEntity;
     }
 
     @Override
     public TaskEntity updateTask(Integer taskId) {
         Session session = entityManager.unwrap(Session.class);
-        TaskEntity taskEntity = session.get(TaskEntity.class,taskId);
+        TaskEntity taskEntity = session.get(TaskEntity.class, taskId);
+
+
+
         session.saveOrUpdate(taskEntity);
         return taskEntity;
+    }
+
+    @Override
+    public CreateTaskRequest createRequest(CreateTaskRequest request) {
+        Session session = entityManager.unwrap(Session.class);
+        CreateTaskRequest taskRequest = new CreateTaskRequest();
+
+        return null;
     }
 }

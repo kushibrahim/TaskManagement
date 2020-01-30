@@ -1,6 +1,8 @@
 package com.kushibrahim.taskmanagement.service.impl;
 
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
+import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
 import com.kushibrahim.taskmanagement.service.TaskService;
 import com.kushibrahim.taskmanagement.service.converter.TaskConverter;
@@ -17,7 +19,6 @@ public class TaskServiceImpl implements TaskService {
         this.taskRepository = taskRepository;
         this.taskConverter = taskConverter;
     }
-
 
     @Override
     public List<TaskDto> getAllTask() {
@@ -41,5 +42,11 @@ public class TaskServiceImpl implements TaskService {
     public TaskDto updateTask(Integer taskId) {
         TaskDto taskDto = taskConverter.convertTaskDto(taskRepository.updateTask(taskId));
         return taskDto;
+    }
+
+    @Override
+    public TaskEntity createTask(CreateTaskRequest request) {
+        TaskEntity taskEntity = taskConverter.convertTaskEntity(taskRepository.createRequest(request));
+        return taskEntity;
     }
 }

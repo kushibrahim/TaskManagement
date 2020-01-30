@@ -1,7 +1,9 @@
 package com.kushibrahim.taskmanagement.service.converter;
 
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
+import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -46,6 +48,21 @@ public class TaskConverter {
             taskDto.setTeamLeadEntityID(taskEntity.getTeamLeadEntityID());
 
             return taskDto;
+        }
+    }
+
+    public TaskEntity convertTaskEntity(CreateTaskRequest request){
+        if(request == null){
+            return null;
+        }
+        else {
+            TaskEntity taskEntity = new TaskEntity();
+            taskEntity.setTaskName(request.getTaskName());
+            taskEntity.setDeveloperEntityID(request.getDeveloperEntityID());
+            taskEntity.setProcessID(request.getProcessID());
+            taskEntity.setTeamLeadEntityID(request.getTeamLeadEntityID());
+
+            return taskEntity;
         }
     }
 }

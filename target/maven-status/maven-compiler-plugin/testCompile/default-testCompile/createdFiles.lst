@@ -1,0 +1,4 @@
+com\kushibrahim\taskmanagement\service\converter\ProcessConverterTest.class
+com\kushibrahim\taskmanagement\service\converter\TaskConverterTest.class
+com\kushibrahim\taskmanagement\service\converter\MetricConverterTest.class
+com\kushibrahim\taskmanagement\TaskmanagementApplicationTests.class

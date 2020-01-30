@@ -2,8 +2,8 @@ package com.kushibrahim.taskmanagement.controller;
 
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.service.TaskService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,6 +31,10 @@ public class TaskController {
     @PostMapping("/{taskId}/{assignee}")
     public TaskDto assigneeTask(@PathVariable Integer taskId, @PathVariable Integer assigneeId){
         return taskService.assigneeTask(taskId, assigneeId);
+    }
+
+    public TaskEntity createTask(@RequestBody CreateTaskRequest request){
+        return taskService.createTask(request);
     }
 
     @PostMapping("/{taskId}")
