@@ -1,86 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="added new changes.">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/model/request/CreateTaskRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/controller/MetricControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/repository/TaskRepositoryIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/taskmanagement.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/TaskmanagementApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/controller/MetricController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/controller/ProcessController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/controller/TaskController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/DeveloperDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/MetricDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/ProcessDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/TaskDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/TeamLeadDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/DeveloperEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/MetricEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/ProcessEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/TaskEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/TeamLeadEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/enumerator/MetricType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/enumerator/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/request/CreateTaskRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/MetricRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/ProcessRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/TaskRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/MetricService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/ProcessService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/TaskService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/MetricConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/ProcessConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/TaskConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/MetricServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/ProcessServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2020-01-29T11-06-31_363-jvmRun1.dump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskmanagement-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskmanagement-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/taskmanagement.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/TaskmanagementApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/controller/MetricControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/MetricServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/ProcessServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/TaskServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/MetricConverterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/ProcessConverterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/TaskConverterTest.class" afterDir="false" />
+    <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/model/entity/MetricEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/model/entity/MetricEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/converter/ProcessConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/converter/ProcessConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/converter/TaskConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/converter/TaskConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/converter/MetricConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/MetricConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/converter/ProcessConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/ProcessConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/converter/TaskConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/converter/TaskConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/MetricServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/MetricServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/ProcessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/ProcessServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/TaskServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,12 +75,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../customer-api-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kushibrahim.taskmanagement.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ibrahim\Desktop\Projects\TaskManagement" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -277,7 +203,7 @@
       <workItem from="1580293217896" duration="8603000" />
       <workItem from="1580367217816" duration="5212000" />
       <workItem from="1580373991642" duration="721000" />
-      <workItem from="1580380639308" duration="9531000" />
+      <workItem from="1580380639308" duration="9794000" />
     </task>
     <task id="LOCAL-00001" summary="refactors project structure">
       <created>1580285354092</created>
@@ -328,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580372201347</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added new changes.">
+      <created>1580394217552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580394217552</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,10 +294,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" width="417" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1580385166266" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580393902044">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580394212692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580393902044" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580394212692" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1580391980366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
