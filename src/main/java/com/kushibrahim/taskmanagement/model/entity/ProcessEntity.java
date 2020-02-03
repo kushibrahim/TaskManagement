@@ -31,12 +31,10 @@ public class ProcessEntity {
 
     @Column(name = "processAssignee")
     @NotNull(message = "Process Assignee is a required field.")
-    @NotEmpty
     private Integer processAssignee;
 
     @Column(name = "processAssigneer")
     @NotNull(message = "Process Assigneer is a required field.")
-    @NotEmpty
     private Integer processAssigneer;
 
     @ManyToOne(fetch = FetchType.EAGER)
