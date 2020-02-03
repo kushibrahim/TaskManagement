@@ -2,24 +2,26 @@ package com.kushibrahim.taskmanagement.controller;
 
 import com.kushibrahim.taskmanagement.base.BaseControllerTest;
 import com.kushibrahim.taskmanagement.model.dto.MetricDto;
+import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.service.impl.MetricServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
+import java.util.Collections;
+
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 
 @WebMvcTest(value = MetricController.class)
 public class MetricControllerTest extends BaseControllerTest {
 
     private static final Integer METRIC_ID = 1;
 
-
     private MetricDto metricDto;
+    private MetricEntity metricEntity;
 
     @MockBean
     private MetricServiceImpl metricService;
@@ -32,6 +34,17 @@ public class MetricControllerTest extends BaseControllerTest {
                 .andExpect(status().isOk());
 
         verify(metricService, times(1)).getMetric(METRIC_ID);
+        verifyNoMoreInteractions(metricService);
+    }
+
+    @Test
+    public void whenGetAllMetric_thenReturnMetricDtoListSuccess() throws Exception {
+        when(metricService.getAllMetric()).thenReturn(Collections.singletonList(metricDto));
+        mockMvc.perform(get("/metric"))
+                .andDo(print())
+                .andExpect(status().isOk());
+
+        verify(metricService, times(1)).getAllMetric();
         verifyNoMoreInteractions(metricService);
     }
 }

@@ -20,6 +20,7 @@ public class TaskRepositoryIntegrationTest {
     @Autowired
     private TaskRepository taskRepository;
 
+    /*
     @Test
     public void testUpdateTask(){
         TaskEntity taskEntity = new TaskEntity();
@@ -31,4 +32,5 @@ public class TaskRepositoryIntegrationTest {
         TaskEntity taskEntity1 = this.taskRepository.updateTask(taskEntity.getTaskID());
         assertEquals(taskEntity.getTaskID(), taskEntity1.getTaskID());
     }
+     */
 }
