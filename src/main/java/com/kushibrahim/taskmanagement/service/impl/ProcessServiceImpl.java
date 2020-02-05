@@ -5,7 +5,11 @@ import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.repository.ProcessRepository;
 import com.kushibrahim.taskmanagement.service.ProcessService;
 import com.kushibrahim.taskmanagement.service.converter.ProcessConverter;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+
 import java.util.List;
 
 @Service
@@ -20,20 +24,24 @@ public class ProcessServiceImpl implements ProcessService {
     }
 
     @Override
-    public List<ProcessDto> getAllProcess() {
-        List<ProcessDto> processDtos = processConverter.convertListProcessDto(processRepository.findAll());
-        return processDtos;
+    public ResponseEntity<List<ProcessDto>> getAllProcess() {
+        List<ProcessEntity> processEntities = processRepository.findAll();
+        if (CollectionUtils.isEmpty(processEntities)) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(processConverter.convertListProcessDto(processEntities), HttpStatus.OK);
     }
 
     @Override
-    public ProcessDto getProcess(Integer id) {
-        ProcessDto processDto = processConverter.convertProcessDto(processRepository.getOne(id));
-        return processDto;
+    public ResponseEntity<ProcessDto> getProcess(Integer id) {
+        return processRepository.findById(id)
+                .map(entity -> new ResponseEntity<>(processConverter.convertProcessDto(entity), HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @Override
-    public ProcessDto saveProcess(ProcessEntity processEntity) {
-        ProcessDto processDto = processConverter.convertProcessDto(processRepository.save(processEntity));
-        return processDto;
+    public ResponseEntity<ProcessDto> saveProcess(ProcessEntity processEntity) {
+        final ProcessEntity processEntitySave = processRepository.save(processEntity);
+        return new ResponseEntity<>(processConverter.convertProcessDto(processEntitySave), HttpStatus.OK);
     }
 }

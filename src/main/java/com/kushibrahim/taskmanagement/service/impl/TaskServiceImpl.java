@@ -6,8 +6,13 @@ import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
 import com.kushibrahim.taskmanagement.service.TaskService;
 import com.kushibrahim.taskmanagement.service.converter.TaskConverter;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TaskServiceImpl implements TaskService {
@@ -21,32 +26,46 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public List<TaskDto> getAllTask() {
-        List<TaskDto> taskDtos = taskConverter.convertListTaskDto(taskRepository.findAll());
-        return taskDtos;
+    public ResponseEntity<List<TaskDto>> getAllTask() {
+        List<TaskEntity> taskEntities = taskRepository.findAll();
+        if(CollectionUtils.isEmpty(taskEntities)){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(taskConverter.convertListTaskDto(taskEntities), HttpStatus.OK);
     }
 
     @Override
-    public TaskDto getTaskById(Integer id) {
-        TaskDto taskDto = taskConverter.convertTaskDto(taskRepository.getOne(id));
-        return taskDto;
+    public ResponseEntity<TaskDto> getTaskById(Integer id) {
+        return taskRepository.findById(id)
+                .map(entity -> new ResponseEntity<>(taskConverter.convertTaskDto(entity), HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @Override
-    public TaskDto assigneeTask(Integer taskId, Integer assigneeId) {
-        TaskDto taskDto = taskConverter.convertTaskDto(taskRepository.assigneeTask(taskId,assigneeId));
-        return taskDto;
+    public ResponseEntity<TaskDto> assigneeTask(Integer taskId, Integer assigneeId) {
+        TaskEntity taskEntity = taskRepository.assigneeTask(taskId,assigneeId);
+        if(taskEntity == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(taskConverter.convertTaskDto(taskEntity), HttpStatus.OK);
     }
 
     @Override
-    public TaskDto updateTask(Integer taskId) {
-        TaskDto taskDto = taskConverter.convertTaskDto(taskRepository.updateTask(taskId));
-        return taskDto;
+    public ResponseEntity<TaskDto> updateTask(Integer taskId) {
+        Optional<TaskEntity> optionalTaskEntity = taskRepository.findById(taskId);
+        if (!optionalTaskEntity.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else {
+            final TaskEntity taskEntity = optionalTaskEntity.get();
+
+            final TaskEntity saved = taskRepository.save(taskEntity);
+            return new ResponseEntity<>(taskConverter.convertTaskDto(saved), HttpStatus.OK);
+        }
     }
 
     @Override
-    public TaskEntity createTask(CreateTaskRequest request) {
-        TaskEntity taskEntity = taskConverter.convertTaskEntity(taskRepository.createRequest(request));
-        return taskEntity;
+    public ResponseEntity<TaskDto> createTask(CreateTaskRequest request) {
+        final TaskEntity saved = taskRepository.save(taskConverter.convertTaskEntity(request));
+        return new ResponseEntity<>(taskConverter.convertTaskDto(saved), HttpStatus.CREATED);
     }
 }

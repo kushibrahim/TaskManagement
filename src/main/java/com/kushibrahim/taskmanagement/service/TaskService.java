@@ -13,5 +13,5 @@ public interface TaskService {
     ResponseEntity<TaskDto> getTaskById(Integer id);
     ResponseEntity<TaskDto> assigneeTask(Integer taskId, Integer assigneeId);
     ResponseEntity<TaskDto> updateTask(Integer taskId);
-    TaskEntity createTask(CreateTaskRequest request);
+    ResponseEntity<TaskDto> createTask(CreateTaskRequest request);
 }

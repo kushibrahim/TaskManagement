@@ -7,7 +7,9 @@ import com.kushibrahim.taskmanagement.service.MetricService;
 import com.kushibrahim.taskmanagement.service.converter.MetricConverter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Collections;
 import java.util.List;
@@ -26,8 +28,12 @@ public class MetricServiceImpl implements MetricService{
 
     @Override
     public ResponseEntity<List<MetricDto>> getAllMetric() {
-        List<MetricDto> metricDto = metricConverter.convertListMetricDto(metricRepository.findAll());
-        return (ResponseEntity<List<MetricDto>>) metricDto;
+        List<MetricEntity> metricEntities = metricRepository.findAll();
+        if(CollectionUtils.isEmpty(metricEntities)){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(metricConverter.convertListMetricDto(metricEntities), HttpStatus.OK);
     }
 
     @Override
