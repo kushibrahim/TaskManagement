@@ -2,13 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/taskmanagement.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/ProcessEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/ProcessEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/request/CreateTaskRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/request/CreateTaskRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-01-29T11-06-31_363-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskmanagement-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskmanagement-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/TaskmanagementApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/TaskmanagementApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/controller/MetricControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/controller/MetricControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanagement.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="180" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,13 +65,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="taskmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taskmanagement@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taskmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="developer: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -57,6 +78,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1X3qQKHz47L0851APNc9bfL3GQP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -91,24 +119,32 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TaskmanagementApplication">
-    <configuration name="TaskRepositoryIntegrationTest.testUpdateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MetricServiceTest">
+    <configuration name="All in taskmanagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskmanagement" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricControllerTest.whenGetMetric_thenReturnMetricDtoSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kushibrahim.taskmanagement.repository.*" />
+          <option name="PATTERN" value="com.kushibrahim.taskmanagement.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.repository.TaskRepositoryIntegrationTest" />
-      <option name="METHOD_NAME" value="testUpdateTask" />
+      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.controller.MetricControllerTest" />
+      <option name="METHOD_NAME" value="whenGetMetric_thenReturnMetricDtoSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskServiceTest.whenAssigneeTask_thenReturnTaskDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetricServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanagement" />
       <extension name="coverage">
         <pattern>
@@ -117,56 +153,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.TaskServiceTest" />
-      <option name="METHOD_NAME" value="whenAssigneeTask_thenReturnTaskDto" />
+      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.MetricServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessControllerTest.whenSaveProcess_thenReturnProcessDtoSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskmanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kushibrahim.taskmanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.controller.ProcessControllerTest" />
+      <option name="METHOD_NAME" value="whenSaveProcess_thenReturnProcessDtoSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskServiceTest.whenGetAllTask_thenReturnTaskDtoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskControllerTest.whenGetTask_thenReturnTaskDtoSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kushibrahim.taskmanagement.service.*" />
+          <option name="PATTERN" value="com.kushibrahim.taskmanagement.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.TaskServiceTest" />
-      <option name="METHOD_NAME" value="whenGetAllTask_thenReturnTaskDtoList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskServiceTest.whenGetTask_thenReturnTaskDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taskmanagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kushibrahim.taskmanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.TaskServiceTest" />
-      <option name="METHOD_NAME" value="whenGetTask_thenReturnTaskDto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskServiceTest.whenUpdateTask_thenReturnTaskDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taskmanagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kushibrahim.taskmanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.service.TaskServiceTest" />
-      <option name="METHOD_NAME" value="whenUpdateTask_thenReturnTaskDto" />
+      <option name="PACKAGE_NAME" value="com.kushibrahim.taskmanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.kushibrahim.taskmanagement.controller.TaskControllerTest" />
+      <option name="METHOD_NAME" value="whenGetTask_thenReturnTaskDtoSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskRepositoryIntegrationTest.testUpdateTask" />
-        <item itemvalue="JUnit.TaskServiceTest.whenGetTask_thenReturnTaskDto" />
-        <item itemvalue="JUnit.TaskServiceTest.whenAssigneeTask_thenReturnTaskDto" />
-        <item itemvalue="JUnit.TaskServiceTest.whenUpdateTask_thenReturnTaskDto" />
-        <item itemvalue="JUnit.TaskServiceTest.whenGetAllTask_thenReturnTaskDtoList" />
+        <item itemvalue="JUnit.MetricServiceTest" />
+        <item itemvalue="JUnit.All in taskmanagement" />
+        <item itemvalue="JUnit.MetricControllerTest.whenGetMetric_thenReturnMetricDtoSuccess" />
+        <item itemvalue="JUnit.ProcessControllerTest.whenSaveProcess_thenReturnProcessDtoSuccess" />
+        <item itemvalue="JUnit.TaskControllerTest.whenGetTask_thenReturnTaskDtoSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +222,17 @@
       <workItem from="1580293217896" duration="8603000" />
       <workItem from="1580367217816" duration="5212000" />
       <workItem from="1580373991642" duration="721000" />
-      <workItem from="1580380639308" duration="9794000" />
+      <workItem from="1580380639308" duration="11018000" />
+      <workItem from="1580453258317" duration="2398000" />
+      <workItem from="1580455721616" duration="401000" />
+      <workItem from="1580456506042" duration="1120000" />
+      <workItem from="1580457662017" duration="160000" />
+      <workItem from="1580458906156" duration="107000" />
+      <workItem from="1580459050704" duration="3956000" />
+      <workItem from="1580748722025" duration="4715000" />
+      <workItem from="1580753694351" duration="219000" />
+      <workItem from="1580885297288" duration="1186000" />
+      <workItem from="1580886696215" duration="412000" />
     </task>
     <task id="LOCAL-00001" summary="refactors project structure">
       <created>1580285354092</created>
@@ -261,7 +290,35 @@
       <option name="project" value="LOCAL" />
       <updated>1580394217552</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added gitignore.">
+      <created>1580394475909</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580394475909</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added createTaskRequest and metricControllerTest">
+      <created>1580482436522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580482436522</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated ProcessEntity">
+      <created>1580753221816</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1580753221816</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added ProcessControllerTest, TaskControllerTest and updated MetricControllerTest">
+      <created>1580753303617</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580753303617</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,76 +332,99 @@
     <MESSAGE value="added taskServiceTest" />
     <MESSAGE value="added new directory &quot;Converter&quot;." />
     <MESSAGE value="added new changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="added new changes." />
+    <MESSAGE value="added gitignore." />
+    <MESSAGE value="added createTaskRequest and metricControllerTest" />
+    <MESSAGE value="updated ProcessEntity" />
+    <MESSAGE value="added ProcessControllerTest, TaskControllerTest and updated MetricControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ProcessControllerTest, TaskControllerTest and updated MetricControllerTest" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580293691587">
+    <state x="275" y="23" key="#File_and_Code_Templates" timestamp="1580885839083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580293691587" />
+    <state x="275" y="23" key="#File_and_Code_Templates/0.0.1366.728@0.0.1366.728" timestamp="1580885839083" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580751468525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580751468525" />
+    <state x="100" y="103" width="1169" height="525" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580752233297">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="103" width="1169" height="525" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1580752233297" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1580393459128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580393459128" />
-    <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580385157996">
+    <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580459726230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1580385157996" />
+    <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1580459726230" />
     <state x="479" y="245" width="417" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1580385166266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" width="417" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1580385166266" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580394212692">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580753302269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580394212692" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1580391980366">
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580753302269" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1580466796563">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580391980366" />
-    <state width="1323" height="367" key="GridCell.Tab.0.bottom" timestamp="1580394083062">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580466796563" />
+    <state width="1323" height="365" key="GridCell.Tab.0.bottom" timestamp="1580886496069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.0.center" timestamp="1580394083062">
+    <state width="1323" height="365" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580886496069" />
+    <state width="1323" height="365" key="GridCell.Tab.0.center" timestamp="1580886496069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.0.left" timestamp="1580394083062">
+    <state width="1323" height="365" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580886496069" />
+    <state width="1323" height="365" key="GridCell.Tab.0.left" timestamp="1580886496069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.0.right" timestamp="1580394083062">
+    <state width="1323" height="365" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580886496069" />
+    <state width="1323" height="365" key="GridCell.Tab.0.right" timestamp="1580886496069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.1.bottom" timestamp="1580394083062">
+    <state width="1323" height="365" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580886496069" />
+    <state width="1309" height="314" key="GridCell.Tab.1.bottom" timestamp="1580753488287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.1.center" timestamp="1580394083062">
+    <state width="1309" height="314" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580753488287" />
+    <state width="1309" height="314" key="GridCell.Tab.1.center" timestamp="1580753488287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.1.left" timestamp="1580394083062">
+    <state width="1309" height="314" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580753488287" />
+    <state width="1309" height="314" key="GridCell.Tab.1.left" timestamp="1580753488287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state width="1323" height="367" key="GridCell.Tab.1.right" timestamp="1580394083062">
+    <state width="1309" height="314" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580753488287" />
+    <state width="1309" height="314" key="GridCell.Tab.1.right" timestamp="1580753488287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="367" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580394083062" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1580380638292">
+    <state width="1309" height="314" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580753488287" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1580467148945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580380638292" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1580467148945" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1580886707965">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580886707965" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580286537972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1580286537972" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580391191155">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580454645199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580391191155" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580454645199" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580457566377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580457566377" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/taskmanagement$All_in_taskmanagement.ic" NAME="All in taskmanagement Coverage Results" MODIFIED="1580753756341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

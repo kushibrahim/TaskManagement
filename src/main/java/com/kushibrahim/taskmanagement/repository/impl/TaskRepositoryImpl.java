@@ -1,7 +1,9 @@
 package com.kushibrahim.taskmanagement.repository.impl;
 
 import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
+import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
 import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
 import org.hibernate.Session;
@@ -11,6 +13,9 @@ import javax.persistence.EntityManager;
 
 @Repository
 public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer> implements TaskRepository {
+
+    private static final String TASK_NAME = "ExampleTask";
+    private static final Integer DEVELOPER_ID = 1;
 
     private final EntityManager entityManager;
 
@@ -32,9 +37,6 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
     public TaskEntity updateTask(Integer taskId) {
         Session session = entityManager.unwrap(Session.class);
         TaskEntity taskEntity = session.get(TaskEntity.class, taskId);
-
-
-
         session.saveOrUpdate(taskEntity);
         return taskEntity;
     }
@@ -44,6 +46,16 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
         Session session = entityManager.unwrap(Session.class);
         CreateTaskRequest taskRequest = new CreateTaskRequest();
 
-        return null;
+        DeveloperEntity developerEntity = new DeveloperEntity();
+        ProcessEntity processEntity = new ProcessEntity();
+        TeamLeadEntity teamLeadEntity = new TeamLeadEntity();
+
+        taskRequest.setTaskName(TASK_NAME);
+        taskRequest.setDeveloperEntityID(developerEntity);
+        taskRequest.setProcessID(processEntity);
+        taskRequest.setTeamLeadEntityID(teamLeadEntity);
+        session.save(taskRequest);
+
+        return taskRequest;
     }
 }
