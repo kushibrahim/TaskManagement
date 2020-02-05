@@ -4,8 +4,10 @@ import com.kushibrahim.taskmanagement.model.entity.*;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class TaskDto {
+public class TaskDto implements Serializable {
 
     private Integer taskID;
     private String taskName;
