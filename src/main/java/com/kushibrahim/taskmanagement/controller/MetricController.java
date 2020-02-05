@@ -4,6 +4,7 @@ import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.service.MetricService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,17 +21,17 @@ public class MetricController {
     }
 
     @GetMapping
-    public List<MetricDto> getAllMetric(){
+    public ResponseEntity<List<MetricDto>> getAllMetric(){
         return metricService.getAllMetric();
     }
 
     @GetMapping("/{metricId}")
-    public MetricDto getMetricById(@PathVariable Integer metricId){
+    public ResponseEntity<MetricDto> getMetricById(@PathVariable Integer metricId){
          return metricService.getMetric(metricId);
     }
 
     @PostMapping("/saveMetric")
-    public MetricDto saveMetric(@RequestBody MetricEntity metricEntity) {
+    public ResponseEntity<MetricDto> saveMetric(@RequestBody MetricEntity metricEntity) {
         return metricService.saveMetric(metricEntity);
     }
 
