@@ -5,8 +5,13 @@ import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.repository.MetricRepository;
 import com.kushibrahim.taskmanagement.service.MetricService;
 import com.kushibrahim.taskmanagement.service.converter.MetricConverter;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MetricServiceImpl implements MetricService{
@@ -20,21 +25,21 @@ public class MetricServiceImpl implements MetricService{
     }
 
     @Override
-    public List<MetricDto> getAllMetric() {
+    public ResponseEntity<List<MetricDto>> getAllMetric() {
         List<MetricDto> metricDto = metricConverter.convertListMetricDto(metricRepository.findAll());
-        return metricDto;
+        return (ResponseEntity<List<MetricDto>>) metricDto;
     }
 
     @Override
-    public MetricDto getMetric(Integer metricId) {
-        MetricDto metricDto = metricConverter.convertMetricDto(metricRepository.getOne(metricId));
-
-        return metricDto;
+    public ResponseEntity<MetricDto> getMetric(Integer metricId) {
+        return metricRepository.findById(metricId)
+                .map(entity -> new ResponseEntity<>(metricConverter.convertMetricDto(entity), HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @Override
-    public MetricDto saveMetric(MetricEntity metricEntity) {
-        MetricDto metricDto = metricConverter.convertMetricDto(metricRepository.save(metricEntity));
-        return metricDto;
+    public ResponseEntity<MetricDto> saveMetric(MetricEntity metricEntity) {
+        final MetricEntity saved = metricRepository.save(metricEntity);
+        return new ResponseEntity<>(metricConverter.convertMetricDto(saved), HttpStatus.OK);
     }
 }
