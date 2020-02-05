@@ -7,8 +7,10 @@ import com.kushibrahim.taskmanagement.service.impl.MetricServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Collections;
+import java.util.List;
 
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -20,7 +22,8 @@ public class MetricControllerTest extends BaseControllerTest {
 
     private static final Integer METRIC_ID = 1;
 
-    private MetricDto metricDto;
+    private ResponseEntity<MetricDto> metricDto;
+    private ResponseEntity<List<MetricDto>> metricDtos;
     private MetricEntity metricEntity;
 
     @MockBean
@@ -39,7 +42,7 @@ public class MetricControllerTest extends BaseControllerTest {
 
     @Test
     public void whenGetAllMetric_thenReturnMetricDtoListSuccess() throws Exception {
-        when(metricService.getAllMetric()).thenReturn(Collections.singletonList(metricDto));
+        when(metricService.getAllMetric()).thenReturn(metricDtos);
         mockMvc.perform(get("/metric"))
                 .andDo(print())
                 .andExpect(status().isOk());

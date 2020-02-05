@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.controller;
 
 import com.kushibrahim.taskmanagement.base.BaseControllerTest;
+import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
@@ -10,8 +11,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Collections;
+import java.util.List;
 
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -24,14 +27,15 @@ public class ProcessControllerTest extends BaseControllerTest {
     private static final Integer PROCESS_ID = 1;
 
     private ProcessEntity processEntity;
-    private ProcessDto processDto;
+    private ResponseEntity<ProcessDto> processDto;
+    private ResponseEntity<List<ProcessDto>> processDtos;
 
     @MockBean
     private ProcessServiceImpl processService;
 
     @Test
     public void whenGetAllProcess_thenReturnProcessDtoListSucess() throws Exception {
-        when(processService.getAllProcess()).thenReturn(Collections.singletonList(processDto));
+        when(processService.getAllProcess()).thenReturn(processDtos);
 
         mockMvc.perform(get("/process"))
                 .andDo(print())
