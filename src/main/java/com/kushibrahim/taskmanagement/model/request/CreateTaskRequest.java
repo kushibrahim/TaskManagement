@@ -5,8 +5,10 @@ import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class CreateTaskRequest {
+public class CreateTaskRequest implements Serializable {
 
     private String taskName;
     private ProcessEntity processID;
