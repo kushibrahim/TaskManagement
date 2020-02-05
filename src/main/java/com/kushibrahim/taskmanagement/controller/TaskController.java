@@ -40,7 +40,7 @@ public class TaskController {
     }
 
     @PostMapping("/createTask")
-    public TaskEntity createTask(@RequestBody CreateTaskRequest request){
+    public ResponseEntity<TaskDto> createTask(@RequestBody CreateTaskRequest request){
         return taskService.createTask(request);
     }
 
