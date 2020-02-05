@@ -11,6 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Collections;
@@ -47,8 +48,8 @@ public class ProcessServiceTest {
         processEntity.setProcessStatus(PROCESS_STATUS);
 
         when(processRepository.findAll()).thenReturn(Collections.singletonList(processEntity));
-        List<ProcessDto> response = processService.getAllProcess();
-        ProcessDto processDto = response.get(0);
+        ResponseEntity<List<ProcessDto>> response = processService.getAllProcess();
+        ProcessDto processDto = response.getBody().get(0);
 
         assertEquals(PROCESS_ID, processDto.getProcessID());
         assertEquals(PROCESS_ASSIGNEE, processDto.getProcessAssignee());
@@ -66,14 +67,15 @@ public class ProcessServiceTest {
         processEntity.setProcessAssignee(PROCESS_ASSIGNEE);
         processEntity.setProcessName(PROCESS_NAME);
 
-        when(processRepository.getOne(processEntity.getProcessID())).thenReturn(processEntity);
-        ProcessDto response = processService.getProcess(PROCESS_ID);
+        when(processRepository.findById(processEntity.getProcessID())).thenReturn(java.util.Optional.of(processEntity));
+        ResponseEntity<ProcessDto> response = processService.getProcess(PROCESS_ID);
+        ProcessDto processDto = response.getBody();
 
-        assertEquals(PROCESS_ID, response.getProcessID());
-        assertEquals(PROCESS_STATUS, response.getProcessStatus());
-        assertEquals(PROCESS_ASSIGNEER, response.getProcessAssigneer());
-        assertEquals(PROCESS_ASSIGNEE, response.getProcessAssignee());
-        assertEquals(PROCESS_NAME, response.getProcessName());
+        assertEquals(PROCESS_ID, processDto.getProcessID());
+        assertEquals(PROCESS_STATUS, processDto.getProcessStatus());
+        assertEquals(PROCESS_ASSIGNEER, processDto.getProcessAssigneer());
+        assertEquals(PROCESS_ASSIGNEE, processDto.getProcessAssignee());
+        assertEquals(PROCESS_NAME, processDto.getProcessName());
     }
 
     @Test
@@ -86,13 +88,14 @@ public class ProcessServiceTest {
         processEntity.setProcessStatus(PROCESS_STATUS);
 
         when(processRepository.save(processEntity)).thenReturn(processEntity);
-        ProcessDto response = processService.saveProcess(processEntity);
+        ResponseEntity<ProcessDto> response = processService.saveProcess(processEntity);
+        ProcessDto processDto = response.getBody();
 
-        assertEquals(PROCESS_ID, response.getProcessID());
-        assertEquals(PROCESS_STATUS, response.getProcessStatus());
-        assertEquals(PROCESS_ASSIGNEER, response.getProcessAssigneer());
-        assertEquals(PROCESS_ASSIGNEE, response.getProcessAssignee());
-        assertEquals(PROCESS_NAME, response.getProcessName());
+        assertEquals(PROCESS_ID, processDto.getProcessID());
+        assertEquals(PROCESS_STATUS, processDto.getProcessStatus());
+        assertEquals(PROCESS_ASSIGNEER, processDto.getProcessAssigneer());
+        assertEquals(PROCESS_ASSIGNEE, processDto.getProcessAssignee());
+        assertEquals(PROCESS_NAME, processDto.getProcessName());
     }
 
 }

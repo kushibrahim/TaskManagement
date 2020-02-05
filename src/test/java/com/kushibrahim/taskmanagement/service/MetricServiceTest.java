@@ -11,6 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.Collections;
 import java.util.List;
@@ -40,8 +41,8 @@ public class MetricServiceTest {
         metricEntity.setMetricType(METRIC_TYPE);
 
         when(metricRepository.findAll()).thenReturn(Collections.singletonList(metricEntity));
-        List<MetricDto> response = metricService.getAllMetric();
-        MetricDto metricDto = response.get(0);
+        ResponseEntity<List<MetricDto>> response = metricService.getAllMetric();
+        MetricDto metricDto = response.getBody().get(0);
 
         assertEquals(METRIC_ID, metricDto.getMetricID());
         assertEquals(METRIC_TYPE, metricDto.getMetricType());
@@ -53,11 +54,12 @@ public class MetricServiceTest {
         metricEntity.setMetricID(METRIC_ID);
         metricEntity.setMetricType(METRIC_TYPE);
 
-        when(metricRepository.getOne(metricEntity.getMetricID())).thenReturn(metricEntity);
-        MetricDto response = metricService.getMetric(METRIC_ID);
+        when(metricRepository.findById(metricEntity.getMetricID())).thenReturn(java.util.Optional.of(metricEntity));
+        ResponseEntity<MetricDto> response = metricService.getMetric(METRIC_ID);
+        MetricDto metricDto = response.getBody();
 
-        assertEquals(METRIC_ID, response.getMetricID());
-        assertEquals(METRIC_TYPE, response.getMetricType());
+        assertEquals(METRIC_ID, metricDto.getMetricID());
+        assertEquals(METRIC_TYPE, metricDto.getMetricType());
 
     }
 
@@ -68,9 +70,9 @@ public class MetricServiceTest {
         metricEntity.setMetricType(METRIC_TYPE);
 
         when(metricRepository.save(metricEntity)).thenReturn(metricEntity);
-        MetricDto response = metricService.saveMetric(metricEntity);
+        ResponseEntity<MetricDto> response = metricService.saveMetric(metricEntity);
 
-        assertEquals(METRIC_ID, response.getMetricID());
-        assertEquals(METRIC_TYPE, response.getMetricType());
+        assertEquals(METRIC_ID, response.getBody().getMetricID());
+        assertEquals(METRIC_TYPE, response.getBody().getMetricType());
     }
 }

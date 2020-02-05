@@ -12,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Collections;
@@ -45,12 +46,12 @@ public class TaskServiceTest {
         taskEntity.setTaskStatus(TASK_STATUS);
 
         when(taskRepository.findAll()).thenReturn(Collections.singletonList(taskEntity));
-        List<TaskDto> response = taskService.getAllTask();
-        TaskDto taskDto = response.get(0);
+        ResponseEntity<List<TaskDto>> response = taskService.getAllTask();
+        TaskDto taskDto = response.getBody().get(0);
 
-        assertEquals(TASK_ID,taskDto.getTaskID());
-        assertEquals(TASK_NAME,taskDto.getTaskName());
-        assertEquals(TASK_STATUS,taskDto.getTaskStatus());
+        assertEquals(TASK_ID, taskDto.getTaskID());
+        assertEquals(TASK_NAME, taskDto.getTaskName());
+        assertEquals(TASK_STATUS, taskDto.getTaskStatus());
     }
 
     @Test
@@ -60,12 +61,12 @@ public class TaskServiceTest {
         taskEntity.setTaskName(TASK_NAME);
         taskEntity.setTaskStatus(TASK_STATUS);
 
-        when(taskRepository.getOne(taskEntity.getTaskID())).thenReturn(taskEntity);
-        TaskDto response = taskService.getTaskById(taskEntity.getTaskID());
+        when(taskRepository.findById(taskEntity.getTaskID())).thenReturn(java.util.Optional.of(taskEntity));
+        ResponseEntity<TaskDto> response = taskService.getTaskById(taskEntity.getTaskID());
 
-        assertEquals(TASK_ID, response.getTaskID());
-        assertEquals(TASK_NAME, response.getTaskName());
-        assertEquals(TASK_STATUS, response.getTaskStatus());
+        assertEquals(TASK_ID, response.getBody().getTaskID());
+        assertEquals(TASK_NAME, response.getBody().getTaskName());
+        assertEquals(TASK_STATUS, response.getBody().getTaskStatus());
     }
 
     @Test
@@ -76,9 +77,9 @@ public class TaskServiceTest {
         taskEntity.setTaskID(TASK_ID);
 
         when(taskRepository.assigneeTask(taskEntity.getTaskID(), DEVELOPER_ID)).thenReturn(taskEntity);
-        TaskDto response = taskService.assigneeTask(taskEntity.getTaskID(), DEVELOPER_ID);
+        ResponseEntity<TaskDto> response = taskService.assigneeTask(taskEntity.getTaskID(), DEVELOPER_ID);
 
-        assertEquals(TASK_ID, response.getTaskID());
+        assertEquals(TASK_ID, response.getBody().getTaskID());
         assertEquals(DEVELOPER_ID, developerEntity.getDeveloperID());
     }
 
@@ -88,8 +89,9 @@ public class TaskServiceTest {
         taskEntity.setTaskID(TASK_ID);
 
         when(taskRepository.updateTask(taskEntity.getTaskID())).thenReturn(taskEntity);
-        TaskDto response = taskService.updateTask(taskEntity.getTaskID());
-
-        assertEquals(TASK_ID, response.getTaskID());
+        ResponseEntity<TaskDto> response = taskService.updateTask(taskEntity.getTaskID());
+        TaskDto taskDto = response.getBody();
+        //This place will be updated
+        assertEquals(TASK_ID, taskDto.getTaskID());
     }
 }
