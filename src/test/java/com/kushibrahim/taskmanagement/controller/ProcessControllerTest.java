@@ -1,19 +1,14 @@
 package com.kushibrahim.taskmanagement.controller;
 
 import com.kushibrahim.taskmanagement.base.BaseControllerTest;
-import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
-import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
-import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import com.kushibrahim.taskmanagement.service.impl.ProcessServiceImpl;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
 
-import java.util.Collections;
 import java.util.List;
 
 import static org.mockito.Mockito.*;
