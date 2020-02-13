@@ -25,6 +25,9 @@ public class TaskConverter {
                 taskDto.setDeveloperEntityID(taskEntity.getDeveloperEntityID());
                 taskDto.setTaskName(taskEntity.getTaskName());
                 taskDto.setTaskStatus(taskEntity.getTaskStatus());
+                taskDto.setTaskActualEndDate(taskEntity.getTaskActualEndDate());
+                taskDto.setTaskStartDate(taskEntity.getTaskStartDate());
+                taskDto.setTaskOriginalEndDate(taskEntity.getTaskOriginalEndDate());
                 taskDto.setTeamLeadEntityID(taskEntity.getTeamLeadEntityID());
 
                 taskDtos.add(taskDto);
@@ -44,6 +47,9 @@ public class TaskConverter {
             taskDto.setDeveloperEntityID(taskEntity.getDeveloperEntityID());
             taskDto.setTaskName(taskEntity.getTaskName());
             taskDto.setTaskStatus(taskEntity.getTaskStatus());
+            taskDto.setTaskActualEndDate(taskEntity.getTaskActualEndDate());
+            taskDto.setTaskStartDate(taskEntity.getTaskStartDate());
+            taskDto.setTaskOriginalEndDate(taskEntity.getTaskOriginalEndDate());
             taskDto.setTeamLeadEntityID(taskEntity.getTeamLeadEntityID());
 
             return taskDto;
