@@ -20,28 +20,28 @@ public class TaskController {
     }
 
     @GetMapping
-    public ResponseEntity<List<TaskDto>> getAllTask(){
-        return taskService.getAllTask();
+    public ResponseEntity<List<TaskDto>> getAllTask() {
+        return ResponseEntity.ok(taskService.getAllTask());
     }
 
     @GetMapping("/{taskId}")
     public ResponseEntity<TaskDto> getTaskById(@PathVariable Integer taskId){
-        return taskService.getTaskById(taskId);
+        return ResponseEntity.ok(taskService.getTaskById(taskId));
     }
 
     @PostMapping("/{taskId}/{assignee}")
     public ResponseEntity<TaskDto> assigneeTask(@PathVariable Integer taskId, @PathVariable Integer assigneeId){
-        return taskService.assigneeTask(taskId, assigneeId);
+        return ResponseEntity.ok(taskService.assigneeTask(taskId, assigneeId));
     }
 
     @PostMapping("/{taskId}")
-    public ResponseEntity<TaskDto> updateTask(@PathVariable Integer taskId){
-        return taskService.updateTask(taskId);
+    public ResponseEntity<TaskDto> updateTask(@PathVariable Integer taskId) {
+        return ResponseEntity.ok(taskService.updateTask(taskId));
     }
 
     @PostMapping("/createTask")
     public ResponseEntity<TaskDto> createTask(@RequestBody CreateTaskRequest request){
-        return taskService.createTask(request);
+        return ResponseEntity.ok(taskService.createTask(request));
     }
 
 }
