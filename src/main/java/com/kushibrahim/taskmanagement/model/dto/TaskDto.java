@@ -5,6 +5,7 @@ import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 public class TaskDto implements Serializable {
@@ -12,6 +13,9 @@ public class TaskDto implements Serializable {
     private Integer taskID;
     private String taskName;
     private Status taskStatus = Status.TODO;
+    private Date taskStartDate;
+    private Date taskOriginalEndDate;
+    private Date taskActualEndDate;
     private ProcessEntity processID;
     private DeveloperEntity developerEntityID;
     private TeamLeadEntity teamLeadEntityID;
