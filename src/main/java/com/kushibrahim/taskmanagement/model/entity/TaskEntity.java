@@ -33,19 +33,19 @@ public class TaskEntity {
     @Column(name = "taskStartDate")
     @NotNull(message = "Task Start Date is a required field.")
     @NotEmpty
-    @JsonFormat(pattern="dd/MM/yyyy")
+    @JsonFormat(pattern="yyyy/MM/dd")
     private Date taskStartDate;
 
     @Column(name = "taskOriginalEndDate")
     @NotNull(message = "Task Original End Date is a required field.")
     @NotEmpty
-    @JsonFormat(pattern="dd/MM/yyyy")
+    @JsonFormat(pattern="yyyy/MM/dd")
     private Date taskOriginalEndDate;
 
     @Column(name = "taskActualEndDate")
     @NotNull(message = "Task Actual End Date is a required field.")
     @NotEmpty
-    @JsonFormat(pattern="dd/MM/yyyy")
+    @JsonFormat(pattern="yyyy/MM/dd")
     private Date taskActualEndDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
