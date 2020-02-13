@@ -14,6 +14,7 @@ import org.mockito.Spy;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,6 +25,9 @@ public class MetricServiceTest {
 
     private static final Integer METRIC_ID = 1;
     private static final MetricType METRIC_TYPE = MetricType.BUGFIX;
+    private static final Date METRIC_START_DATE = new Date("2012/12/19") ;
+    private static final Date METRIC_ORIGINAL_ENDDATE = new Date("2012/12/23");
+    private static final Date METRIC_ACTUAL_ENDDATE = new Date("2012/12/25");
 
     @InjectMocks
     private MetricServiceImpl metricService;
@@ -39,6 +43,9 @@ public class MetricServiceTest {
         MetricEntity metricEntity = new MetricEntity();
         metricEntity.setMetricID(METRIC_ID);
         metricEntity.setMetricType(METRIC_TYPE);
+        metricEntity.setMetricStartDate(METRIC_START_DATE);
+        metricEntity.setMetricOriginalEndDate(METRIC_ORIGINAL_ENDDATE);
+        metricEntity.setMetricActualEndDate(METRIC_ACTUAL_ENDDATE);
 
         when(metricRepository.findAll()).thenReturn(Collections.singletonList(metricEntity));
         ResponseEntity<List<MetricDto>> response = metricService.getAllMetric();
@@ -46,6 +53,9 @@ public class MetricServiceTest {
 
         assertEquals(METRIC_ID, metricDto.getMetricID());
         assertEquals(METRIC_TYPE, metricDto.getMetricType());
+        assertEquals(METRIC_START_DATE, metricDto.getMetricStartDate());
+        assertEquals(METRIC_ACTUAL_ENDDATE, metricDto.getMetricActualEndDate());
+        assertEquals(METRIC_ORIGINAL_ENDDATE, metricDto.getMetricOriginalEndDate());
     }
 
     @Test
@@ -53,6 +63,9 @@ public class MetricServiceTest {
         MetricEntity metricEntity = new MetricEntity();
         metricEntity.setMetricID(METRIC_ID);
         metricEntity.setMetricType(METRIC_TYPE);
+        metricEntity.setMetricStartDate(METRIC_START_DATE);
+        metricEntity.setMetricOriginalEndDate(METRIC_ORIGINAL_ENDDATE);
+        metricEntity.setMetricActualEndDate(METRIC_ACTUAL_ENDDATE);
 
         when(metricRepository.findById(metricEntity.getMetricID())).thenReturn(java.util.Optional.of(metricEntity));
         ResponseEntity<MetricDto> response = metricService.getMetric(METRIC_ID);
@@ -60,6 +73,9 @@ public class MetricServiceTest {
 
         assertEquals(METRIC_ID, metricDto.getMetricID());
         assertEquals(METRIC_TYPE, metricDto.getMetricType());
+        assertEquals(METRIC_START_DATE, metricDto.getMetricStartDate());
+        assertEquals(METRIC_ACTUAL_ENDDATE, metricDto.getMetricActualEndDate());
+        assertEquals(METRIC_ORIGINAL_ENDDATE, metricDto.getMetricOriginalEndDate());
 
     }
 
@@ -68,11 +84,18 @@ public class MetricServiceTest {
         MetricEntity metricEntity = new MetricEntity();
         metricEntity.setMetricID(METRIC_ID);
         metricEntity.setMetricType(METRIC_TYPE);
+        metricEntity.setMetricStartDate(METRIC_START_DATE);
+        metricEntity.setMetricOriginalEndDate(METRIC_ORIGINAL_ENDDATE);
+        metricEntity.setMetricActualEndDate(METRIC_ACTUAL_ENDDATE);
 
         when(metricRepository.save(metricEntity)).thenReturn(metricEntity);
         ResponseEntity<MetricDto> response = metricService.saveMetric(metricEntity);
 
         assertEquals(METRIC_ID, response.getBody().getMetricID());
         assertEquals(METRIC_TYPE, response.getBody().getMetricType());
+        assertEquals(METRIC_START_DATE, response.getBody().getMetricStartDate());
+        assertEquals(METRIC_ACTUAL_ENDDATE, response.getBody().getMetricActualEndDate());
+        assertEquals(METRIC_ORIGINAL_ENDDATE, response.getBody().getMetricOriginalEndDate());
+
     }
 }
