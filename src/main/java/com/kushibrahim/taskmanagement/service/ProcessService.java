@@ -10,6 +10,6 @@ public interface ProcessService {
 
     ResponseEntity<List<ProcessDto>> getAllProcess();
     ResponseEntity<ProcessDto> getProcess(Integer id);
-    ResponseEntity<ProcessDto> saveProcess(ProcessEntity processEntity);
+    ResponseEntity<ProcessDto> saveProcess(ProcessDto processDto);
 
 }

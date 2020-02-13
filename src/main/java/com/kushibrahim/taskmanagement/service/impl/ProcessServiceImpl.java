@@ -40,8 +40,9 @@ public class ProcessServiceImpl implements ProcessService {
     }
 
     @Override
-    public ResponseEntity<ProcessDto> saveProcess(ProcessEntity processEntity) {
-        final ProcessEntity processEntitySave = processRepository.save(processEntity);
+    public ResponseEntity<ProcessDto> saveProcess(ProcessDto processDto) {
+        final ProcessEntity processEntitySave = processRepository.save(processConverter.convertProcessEntity(processDto));
         return new ResponseEntity<>(processConverter.convertProcessDto(processEntitySave), HttpStatus.OK);
     }
+
 }
