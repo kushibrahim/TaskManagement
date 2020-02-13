@@ -28,15 +28,15 @@ public class TaskEntity {
     @Column(name = "taskStatus", nullable = false)
     private Status taskStatus = Status.TODO;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "processID")
     private ProcessEntity processID;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "developerID")
     private DeveloperEntity developerEntityID;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teamLeadID")
     private TeamLeadEntity teamLeadEntityID;
 }

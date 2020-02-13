@@ -43,7 +43,7 @@ public class MetricEntity {
     @JsonFormat(pattern="dd/MM/yyyy")
     private Date metricActualEndDate;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "taskID")
     private TaskEntity taskID;
 

@@ -37,7 +37,7 @@ public class ProcessEntity {
     @NotNull(message = "Process Assigneer is a required field.")
     private Integer processAssigneer;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teamLeadID")
     private TeamLeadEntity teamLeadID;
 
