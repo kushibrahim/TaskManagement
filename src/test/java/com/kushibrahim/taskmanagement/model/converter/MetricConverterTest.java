@@ -1,6 +1,6 @@
-package com.kushibrahim.taskmanagement.service.converter;
+package com.kushibrahim.taskmanagement.model.converter;
 
-import com.kushibrahim.taskmanagement.model.dto.TaskDto;
+import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,23 +10,23 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 @ExtendWith(SpringExtension.class)
-public class TaskConverterTest {
+public class MetricConverterTest {
 
-    private TaskConverter taskConverter;
+    private MetricConverter metricConverter;
 
     @BeforeEach
     void setUp() {
-        taskConverter = new TaskConverter();
+        metricConverter = new MetricConverter();
     }
 
     @Test
     void convertToDtoNull(){
-        final TaskDto taskDto = taskConverter.convertTaskDto(null);
+        final MetricDto metricDto = metricConverter.convertMetricDto(null);
         assertNull(null);
     }
 
     @AfterEach
     void tearDown(){
-        taskConverter = null;
+        metricConverter = null;
     }
 }

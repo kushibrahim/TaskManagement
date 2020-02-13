@@ -4,7 +4,7 @@ import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.repository.ProcessRepository;
 import com.kushibrahim.taskmanagement.service.ProcessService;
-import com.kushibrahim.taskmanagement.service.converter.ProcessConverter;
+import com.kushibrahim.taskmanagement.model.converter.ProcessConverter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

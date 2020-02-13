@@ -4,16 +4,13 @@ import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.repository.MetricRepository;
 import com.kushibrahim.taskmanagement.service.MetricService;
-import com.kushibrahim.taskmanagement.service.converter.MetricConverter;
+import com.kushibrahim.taskmanagement.model.converter.MetricConverter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class MetricServiceImpl implements MetricService{

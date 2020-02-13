@@ -1,4 +1,4 @@
-package com.kushibrahim.taskmanagement.service.converter;
+package com.kushibrahim.taskmanagement.model.converter;
 
 import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import org.junit.jupiter.api.AfterEach;

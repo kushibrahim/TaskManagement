@@ -5,7 +5,7 @@ import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
 import com.kushibrahim.taskmanagement.service.TaskService;
-import com.kushibrahim.taskmanagement.service.converter.TaskConverter;
+import com.kushibrahim.taskmanagement.model.converter.TaskConverter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

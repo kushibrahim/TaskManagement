@@ -1,6 +1,6 @@
 package com.kushibrahim.taskmanagement.service;
 
-import com.kushibrahim.taskmanagement.service.converter.MetricConverter;
+import com.kushibrahim.taskmanagement.model.converter.MetricConverter;
 import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.model.enumerator.MetricType;

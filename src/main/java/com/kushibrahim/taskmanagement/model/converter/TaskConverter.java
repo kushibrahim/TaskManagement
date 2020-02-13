@@ -1,7 +1,6 @@
-package com.kushibrahim.taskmanagement.service.converter;
+package com.kushibrahim.taskmanagement.model.converter;
 
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
-import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import org.springframework.stereotype.Component;
