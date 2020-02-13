@@ -1,9 +1,11 @@
 package com.kushibrahim.taskmanagement.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "task")
@@ -27,6 +29,24 @@ public class TaskEntity {
     @Enumerated(EnumType.STRING)
     @Column(name = "taskStatus", nullable = false)
     private Status taskStatus = Status.TODO;
+
+    @Column(name = "taskStartDate")
+    @NotNull(message = "Task Start Date is a required field.")
+    @NotEmpty
+    @JsonFormat(pattern="dd/MM/yyyy")
+    private Date taskStartDate;
+
+    @Column(name = "taskOriginalEndDate")
+    @NotNull(message = "Task Original End Date is a required field.")
+    @NotEmpty
+    @JsonFormat(pattern="dd/MM/yyyy")
+    private Date taskOriginalEndDate;
+
+    @Column(name = "taskActualEndDate")
+    @NotNull(message = "Task Actual End Date is a required field.")
+    @NotEmpty
+    @JsonFormat(pattern="dd/MM/yyyy")
+    private Date taskActualEndDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "processID")
