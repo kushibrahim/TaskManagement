@@ -10,6 +10,8 @@ import org.hibernate.Session;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer> implements TaskRepository {
@@ -58,4 +60,13 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
 
         return taskRequest;
     }
+
+    @Override
+    public List<TaskEntity> getAllOverDueTask() {
+        List<TaskEntity> entities = this.findAll();
+        return entities.stream()
+                .filter(x -> x.getTaskOriginalEndDate().after(x.getTaskActualEndDate()))
+                .collect(Collectors.toList());
+    }
+
 }
