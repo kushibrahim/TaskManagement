@@ -35,4 +35,8 @@ public class MetricController {
         return metricService.saveMetric(metricEntity);
     }
 
+    @GetMapping("/completedmetrics")
+    public List<MetricDto> getAllDoneSuccessMetrics(){
+        return metricService.getAllDoneSuccessMetrics();
+    }
 }

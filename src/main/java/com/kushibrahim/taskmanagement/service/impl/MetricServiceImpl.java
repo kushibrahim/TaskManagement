@@ -1,10 +1,10 @@
 package com.kushibrahim.taskmanagement.service.impl;
 
+import com.kushibrahim.taskmanagement.model.converter.MetricConverter;
 import com.kushibrahim.taskmanagement.model.dto.MetricDto;
 import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
 import com.kushibrahim.taskmanagement.repository.MetricRepository;
 import com.kushibrahim.taskmanagement.service.MetricService;
-import com.kushibrahim.taskmanagement.model.converter.MetricConverter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -44,5 +44,11 @@ public class MetricServiceImpl implements MetricService{
     public ResponseEntity<MetricDto> saveMetric(MetricEntity metricEntity) {
         final MetricEntity saved = metricRepository.save(metricEntity);
         return new ResponseEntity<>(metricConverter.convertMetricDto(saved), HttpStatus.OK);
+    }
+
+    @Override
+    public List<MetricDto> getAllDoneSuccessMetrics() {
+        List<MetricEntity> entities = metricRepository.getAllDoneSuccessMetrics();
+        return metricConverter.convertListMetricDto(entities);
     }
 }

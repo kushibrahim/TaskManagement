@@ -12,4 +12,6 @@ public interface MetricService {
     ResponseEntity<MetricDto> getMetric(Integer metricId);
     ResponseEntity<MetricDto> saveMetric(MetricEntity metricEntity);
 
+    List<MetricDto> getAllDoneSuccessMetrics();
+
 }
