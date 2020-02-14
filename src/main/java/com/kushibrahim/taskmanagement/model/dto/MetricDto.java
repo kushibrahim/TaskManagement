@@ -20,5 +20,5 @@ public class MetricDto implements Serializable {
     private Date metricStartDate;
     private Date metricOriginalEndDate;
     private Date metricActualEndDate;
-    private TaskEntity taskID;
+    private TaskDto taskID;
 }

@@ -16,7 +16,7 @@ public class TaskDto implements Serializable {
     private Date taskStartDate;
     private Date taskOriginalEndDate;
     private Date taskActualEndDate;
-    private ProcessEntity processID;
-    private DeveloperEntity developerEntityID;
-    private TeamLeadEntity teamLeadEntityID;
+    private ProcessDto processID;
+    private DeveloperDto developerEntityID;
+    private TeamLeadDto teamLeadEntityID;
 }

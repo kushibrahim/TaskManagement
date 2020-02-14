@@ -14,5 +14,5 @@ public class ProcessDto implements Serializable {
     private String processName;
     private Integer processAssignee;
     private int processAssigneer;
-    private TeamLeadEntity teamLeadID;
+    private TeamLeadDto teamLeadID;
 }
