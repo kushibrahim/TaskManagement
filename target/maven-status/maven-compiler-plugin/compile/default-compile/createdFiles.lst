@@ -1,3 +1,4 @@
+com\kushibrahim\taskmanagement\model\converter\ProcessConverter.class
 com\kushibrahim\taskmanagement\controller\TaskController.class
 com\kushibrahim\taskmanagement\model\entity\TeamLeadEntity.class
 com\kushibrahim\taskmanagement\model\dto\DeveloperDto.class
@@ -12,19 +13,19 @@ com\kushibrahim\taskmanagement\model\dto\ProcessDto.class
 com\kushibrahim\taskmanagement\model\entity\MetricEntity.class
 com\kushibrahim\taskmanagement\service\MetricService.class
 com\kushibrahim\taskmanagement\service\impl\MetricServiceImpl.class
+com\kushibrahim\taskmanagement\model\converter\MetricConverter.class
 com\kushibrahim\taskmanagement\model\dto\TeamLeadDto.class
 com\kushibrahim\taskmanagement\service\impl\ProcessServiceImpl.class
 com\kushibrahim\taskmanagement\model\dto\MetricDto.class
 com\kushibrahim\taskmanagement\model\entity\TaskEntity.class
 com\kushibrahim\taskmanagement\service\impl\TaskServiceImpl.class
 com\kushibrahim\taskmanagement\model\entity\DeveloperEntity.class
-com\kushibrahim\taskmanagement\service\converter\MetricConverter.class
+com\kushibrahim\taskmanagement\config\swagger\SpringFoxConfig.class
 com\kushibrahim\taskmanagement\repository\impl\TaskRepositoryImpl.class
 com\kushibrahim\taskmanagement\controller\MetricController.class
 com\kushibrahim\taskmanagement\repository\MetricRepository.class
-com\kushibrahim\taskmanagement\service\converter\ProcessConverter.class
 com\kushibrahim\taskmanagement\repository\TaskRepository.class
 com\kushibrahim\taskmanagement\service\ProcessService.class
 com\kushibrahim\taskmanagement\controller\ProcessController.class
 com\kushibrahim\taskmanagement\TaskmanagementApplication.class
-com\kushibrahim\taskmanagement\service\converter\TaskConverter.class
+com\kushibrahim\taskmanagement\model\converter\TaskConverter.class

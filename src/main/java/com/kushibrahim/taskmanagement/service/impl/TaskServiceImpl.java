@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class TaskServiceImpl implements TaskService {
+class TaskServiceImpl implements TaskService {
 
     private final TaskRepository taskRepository;
     private final TaskConverter taskConverter;
@@ -29,9 +29,9 @@ public class TaskServiceImpl implements TaskService {
     public ResponseEntity<List<TaskDto>> getAllTask() {
         List<TaskEntity> taskEntities = taskRepository.findAll();
         if(CollectionUtils.isEmpty(taskEntities)){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return (ResponseEntity<List<TaskDto>>) ResponseEntity.notFound();
         }
-        return new ResponseEntity<>(taskConverter.convertListTaskDto(taskEntities), HttpStatus.OK);
+        return (ResponseEntity<List<TaskDto>>) ResponseEntity.ok(taskConverter.convertListTaskDto(taskEntities));
     }
 
     @Override
@@ -45,27 +45,34 @@ public class TaskServiceImpl implements TaskService {
     public ResponseEntity<TaskDto> assigneeTask(Integer taskId, Integer assigneeId) {
         TaskEntity taskEntity = taskRepository.assigneeTask(taskId,assigneeId);
         if(taskEntity == null){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return (ResponseEntity<TaskDto>) ResponseEntity.notFound();
         }
-        return new ResponseEntity<>(taskConverter.convertTaskDto(taskEntity), HttpStatus.OK);
+        return ResponseEntity.ok(taskConverter.convertTaskDto(taskEntity));
     }
 
     @Override
     public ResponseEntity<TaskDto> updateTask(Integer taskId) {
         Optional<TaskEntity> optionalTaskEntity = taskRepository.findById(taskId);
         if (!optionalTaskEntity.isPresent()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return (ResponseEntity<TaskDto>) ResponseEntity.notFound();
         } else {
             final TaskEntity taskEntity = optionalTaskEntity.get();
             final TaskEntity saved = taskRepository.save(taskEntity);
             //This place will be updated
-            return new ResponseEntity<>(taskConverter.convertTaskDto(saved), HttpStatus.OK);
+            return ResponseEntity.ok(taskConverter.convertTaskDto(saved));
         }
     }
 
     @Override
     public ResponseEntity<TaskDto> createTask(CreateTaskRequest request) {
         final TaskEntity saved = taskRepository.save(taskConverter.convertTaskEntity(request));
-        return new ResponseEntity<>(taskConverter.convertTaskDto(saved), HttpStatus.CREATED);
+        return ResponseEntity.ok(taskConverter.convertTaskDto(saved));
     }
+
+    @Override
+    public List<TaskDto> getAllOverDueTask() {
+        List<TaskEntity> entities = taskRepository.getAllOverDueTask();
+        return (List<TaskDto>) ResponseEntity.ok(taskConverter.convertListTaskDto(entities));
+    }
+
 }

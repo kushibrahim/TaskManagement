@@ -8,11 +8,11 @@ import java.util.List;
 
 public interface TaskService {
 
-    List<TaskDto> getAllTask();
-    TaskDto getTaskById(Integer id);
-    TaskDto assigneeTask(Integer taskId, Integer assigneeId);
-    TaskDto updateTask(Integer taskId);
-    TaskDto createTask(CreateTaskRequest request);
+    ResponseEntity<List<TaskDto>> getAllTask();
+    ResponseEntity<TaskDto> getTaskById(Integer id);
+    ResponseEntity<TaskDto> assigneeTask(Integer taskId, Integer assigneeId);
+    ResponseEntity<TaskDto> updateTask(Integer taskId);
+    ResponseEntity<TaskDto> createTask(CreateTaskRequest request);
 
     List<TaskDto> getAllOverDueTask();
 }

@@ -6,7 +6,6 @@ import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
-import com.kushibrahim.taskmanagement.service.impl.TaskServiceImpl;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -35,7 +34,7 @@ public class TaskServiceTest {
     private static final Date TASK_ACTUAL_ENDDATE = new Date("2012/12/25");
 
     @InjectMocks
-    private TaskServiceImpl taskService;
+    private TaskService taskService;
 
     @Mock
     private TaskRepository taskRepository;
