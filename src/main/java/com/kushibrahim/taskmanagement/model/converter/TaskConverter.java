@@ -1,7 +1,13 @@
 package com.kushibrahim.taskmanagement.model.converter;
 
+import com.kushibrahim.taskmanagement.model.dto.DeveloperDto;
+import com.kushibrahim.taskmanagement.model.dto.ProcessDto;
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
+import com.kushibrahim.taskmanagement.model.dto.TeamLeadDto;
+import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
+import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
+import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
 import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -21,14 +27,14 @@ public class TaskConverter {
             for(TaskEntity taskEntity : taskEntities){
                 TaskDto taskDto = new TaskDto();
                 taskDto.setTaskID(taskEntity.getTaskID());
-                taskDto.setProcessID(taskEntity.getProcessID());
-                taskDto.setDeveloperEntityID(taskEntity.getDeveloperEntityID());
+                taskDto.setProcessID(convertProcessDto(taskEntity.getProcessID()));
+                taskDto.setDeveloperEntityID(convertDeveloperDto(taskEntity.getDeveloperEntityID()));
                 taskDto.setTaskName(taskEntity.getTaskName());
                 taskDto.setTaskStatus(taskEntity.getTaskStatus());
                 taskDto.setTaskActualEndDate(taskEntity.getTaskActualEndDate());
                 taskDto.setTaskStartDate(taskEntity.getTaskStartDate());
                 taskDto.setTaskOriginalEndDate(taskEntity.getTaskOriginalEndDate());
-                taskDto.setTeamLeadEntityID(taskEntity.getTeamLeadEntityID());
+                taskDto.setTeamLeadEntityID(convertTeamLeadDto(taskEntity.getTeamLeadEntityID()));
 
                 taskDtos.add(taskDto);
             }
@@ -43,14 +49,14 @@ public class TaskConverter {
         else {
             TaskDto taskDto = new TaskDto();
             taskDto.setTaskID(taskEntity.getTaskID());
-            taskDto.setProcessID(taskEntity.getProcessID());
-            taskDto.setDeveloperEntityID(taskEntity.getDeveloperEntityID());
+            taskDto.setProcessID(convertProcessDto(taskEntity.getProcessID()));
+            taskDto.setDeveloperEntityID(convertDeveloperDto(taskEntity.getDeveloperEntityID()));
             taskDto.setTaskName(taskEntity.getTaskName());
             taskDto.setTaskStatus(taskEntity.getTaskStatus());
             taskDto.setTaskActualEndDate(taskEntity.getTaskActualEndDate());
             taskDto.setTaskStartDate(taskEntity.getTaskStartDate());
             taskDto.setTaskOriginalEndDate(taskEntity.getTaskOriginalEndDate());
-            taskDto.setTeamLeadEntityID(taskEntity.getTeamLeadEntityID());
+            taskDto.setTeamLeadEntityID(convertTeamLeadDto(taskEntity.getTeamLeadEntityID()));
 
             return taskDto;
         }
@@ -68,6 +74,51 @@ public class TaskConverter {
             taskEntity.setTeamLeadEntityID(request.getTeamLeadEntityID());
 
             return taskEntity;
+        }
+    }
+
+    public ProcessDto convertProcessDto(ProcessEntity processEntity){
+        if(processEntity == null){
+            return null;
+        }
+        else {
+            ProcessDto processDto = new ProcessDto();
+            processDto.setProcessAssignee(processEntity.getProcessAssignee());
+            processDto.setProcessAssigneer(processEntity.getProcessAssigneer());
+            processDto.setProcessName(processEntity.getProcessName());
+            processDto.setProcessStatus(processEntity.getProcessStatus());
+            processDto.setTeamLeadID(convertTeamLeadDto(processEntity.getTeamLeadID()));
+            processDto.setProcessID(processEntity.getProcessID());
+
+            return processDto;
+        }
+    }
+
+    public DeveloperDto convertDeveloperDto(DeveloperEntity developerEntity){
+        if(developerEntity == null){
+            return null;
+        }
+        else {
+            DeveloperDto developerDto = new DeveloperDto();
+            developerDto.setDeveloperID(developerEntity.getDeveloperID());
+            developerDto.setDeveloperMail(developerEntity.getDeveloperMail());
+            developerDto.setDeveloperName(developerEntity.getDeveloperName());
+
+            return developerDto;
+        }
+    }
+
+    public TeamLeadDto convertTeamLeadDto(TeamLeadEntity teamLeadEntity){
+        if(teamLeadEntity == null){
+            return null;
+        }
+        else {
+            TeamLeadDto teamLeadDto = new TeamLeadDto();
+            teamLeadDto.setTeamLeadID(teamLeadEntity.getTeamLeadID());
+            teamLeadDto.setTeamLeadMail(teamLeadEntity.getTeamLeadMail());
+            teamLeadDto.setTeamLeadName(teamLeadEntity.getTeamLeadName());
+
+            return teamLeadDto;
         }
     }
 }
