@@ -21,7 +21,7 @@ public class MetricRepositoryImpl extends SimpleJpaRepository<MetricEntity,Integ
     public List<MetricEntity> getAllDoneSuccessMetrics() {
         List<MetricEntity> entities = this.findAll();
         return entities.stream()
-                .filter(x -> x.getMetricType().equals("DONE"))
+                .filter(x -> x.getMetricType().name().equals("DONE"))
                 .collect(Collectors.toList());
     }
 }
