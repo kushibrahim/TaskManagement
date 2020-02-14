@@ -1,6 +1,5 @@
 package com.kushibrahim.taskmanagement.model.dto;
 
-import com.kushibrahim.taskmanagement.model.entity.TeamLeadEntity;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.Data;
 
