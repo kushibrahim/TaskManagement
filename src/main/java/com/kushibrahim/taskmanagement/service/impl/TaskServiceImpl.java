@@ -72,7 +72,7 @@ class TaskServiceImpl implements TaskService {
     @Override
     public List<TaskDto> getAllOverDueTask() {
         List<TaskEntity> entities = taskRepository.getAllOverDueTask();
-        return (List<TaskDto>) ResponseEntity.ok(taskConverter.convertListTaskDto(entities));
+        return (taskConverter.convertListTaskDto(entities));
     }
 
 }
