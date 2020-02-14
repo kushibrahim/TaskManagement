@@ -31,7 +31,7 @@ class TaskServiceImpl implements TaskService {
         if(CollectionUtils.isEmpty(taskEntities)){
             return (ResponseEntity<List<TaskDto>>) ResponseEntity.notFound();
         }
-        return (ResponseEntity<List<TaskDto>>) ResponseEntity.ok(taskConverter.convertListTaskDto(taskEntities));
+        return ResponseEntity.ok(taskConverter.convertListTaskDto(taskEntities));
     }
 
     @Override
@@ -72,7 +72,7 @@ class TaskServiceImpl implements TaskService {
     @Override
     public List<TaskDto> getAllOverDueTask() {
         List<TaskEntity> entities = taskRepository.getAllOverDueTask();
-        return (taskConverter.convertListTaskDto(entities));
+        return taskConverter.convertListTaskDto(entities);
     }
 
 }
