@@ -51,16 +51,12 @@ class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public ResponseEntity<TaskDto> updateTask(Integer taskId) {
-        Optional<TaskEntity> optionalTaskEntity = taskRepository.findById(taskId);
-        if (!optionalTaskEntity.isPresent()) {
+    public ResponseEntity<TaskDto> updateTask(TaskEntity task) {
+        TaskEntity taskEntity = taskRepository.updateTask(task);
+        if(taskEntity == null){
             return (ResponseEntity<TaskDto>) ResponseEntity.notFound();
-        } else {
-            final TaskEntity taskEntity = optionalTaskEntity.get();
-            final TaskEntity saved = taskRepository.save(taskEntity);
-            //This place will be updated
-            return ResponseEntity.ok(taskConverter.convertTaskDto(saved));
         }
+        return ResponseEntity.ok(taskConverter.convertTaskDto(task));
     }
 
     @Override
