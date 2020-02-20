@@ -1,45 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="updated ServiceTest layer.">
+    <list default="true" id="fe1b23f9-65a4-475c-b961-57e40411c315" name="Default Changelist" comment="updated MetricType and MetricRepositoryImpl.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/controller/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/controller/TaskControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kushibrahim/taskmanagement/service/TaskServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/TaskDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/dto/TaskDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/MetricEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/MetricEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/ProcessEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/ProcessEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/TaskEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/model/entity/TaskEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/TaskService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/MetricConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/ProcessConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/converter/TaskConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/MetricServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/MetricServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/ProcessServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/ProcessServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kushibrahim/taskmanagement/service/impl/TaskServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.TaskmanagementApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.MetricConverterTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.ProcessConverterTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kushibrahim.taskmanagement.service.converter.TaskConverterTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/controller/MetricControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/controller/MetricControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/MetricServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/MetricServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/ProcessServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/ProcessServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/TaskServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/TaskServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/MetricConverterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/ProcessConverterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kushibrahim/taskmanagement/service/converter/TaskConverterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/MetricController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/controller/MetricController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +39,6 @@
         <item name="taskmanagement@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="taskmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taskmanagement@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taskmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="task: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -262,6 +219,10 @@
       <workItem from="1581591210364" duration="4475000" />
       <workItem from="1581603054857" duration="596000" />
       <workItem from="1581663049547" duration="687000" />
+      <workItem from="1581670590052" duration="3950000" />
+      <workItem from="1581678957143" duration="1812000" />
+      <workItem from="1582094819557" duration="1990000" />
+      <workItem from="1582180808223" duration="5428000" />
     </task>
     <task id="LOCAL-00001" summary="refactors project structure">
       <created>1580285354092</created>
@@ -452,7 +413,84 @@
       <option name="project" value="LOCAL" />
       <updated>1581603586889</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="updated MetricController, MetricRepository, MetricServiceImpl and MetricService.">
+      <created>1581677841556</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1581677841556</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added MetricRepositoryImpl">
+      <created>1581677878952</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1581677878952</updated>
+    </task>
+    <task id="LOCAL-00030" summary="updated MetricType and MetricRepositoryImpl.">
+      <created>1581680445281</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1581680445281</updated>
+    </task>
+    <task id="LOCAL-00031" summary="updated ProcessDto">
+      <created>1581680485063</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1581680485063</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added ProcessTaskManager in Service Layer.">
+      <created>1582185749848</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582185749848</updated>
+    </task>
+    <task id="LOCAL-00033" summary="updated TaskmanagementApplication">
+      <created>1582185812663</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1582185812663</updated>
+    </task>
+    <task id="LOCAL-00034" summary="updated ProcessEntity and TaskEntity.">
+      <created>1582185855737</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1582185855737</updated>
+    </task>
+    <task id="LOCAL-00035" summary="updated TaskRepositoryImpl and MetricRepositoryImpl.">
+      <created>1582185890445</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1582185890445</updated>
+    </task>
+    <task id="LOCAL-00036" summary="updated MetricRepository and ProcessRepository">
+      <created>1582185925477</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1582185925477</updated>
+    </task>
+    <task id="LOCAL-00037" summary="updated TaskRepositoryImpl.">
+      <created>1582186233115</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1582186233115</updated>
+    </task>
+    <task id="LOCAL-00038" summary="updated target">
+      <created>1582186283150</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1582186283150</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,17 +510,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactors project structure" />
-    <MESSAGE value="updates processConverter and taskConverter" />
-    <MESSAGE value="updates converter layer tests" />
-    <MESSAGE value="added metricServiceTest and processServiceTest." />
-    <MESSAGE value="added taskServiceTest" />
-    <MESSAGE value="added new directory &quot;Converter&quot;." />
-    <MESSAGE value="added new changes." />
-    <MESSAGE value="added gitignore." />
-    <MESSAGE value="added createTaskRequest and metricControllerTest" />
-    <MESSAGE value="updated ProcessEntity" />
-    <MESSAGE value="added ProcessControllerTest, TaskControllerTest and updated MetricControllerTest" />
     <MESSAGE value="updated gitignore and pom.xml" />
     <MESSAGE value="updated Controller layer." />
     <MESSAGE value="updated metricServiceImpl." />
@@ -497,7 +524,18 @@
     <MESSAGE value="added OverDueTaskController" />
     <MESSAGE value="updated TaskRepository and TaskRepositoryImpl" />
     <MESSAGE value="updated TaskService and TaskController" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated TaskService and TaskController" />
+    <MESSAGE value="updated MetricController, MetricRepository, MetricServiceImpl and MetricService." />
+    <MESSAGE value="added MetricRepositoryImpl" />
+    <MESSAGE value="updated MetricType and MetricRepositoryImpl." />
+    <MESSAGE value="updated ProcessDto" />
+    <MESSAGE value="added ProcessTaskManager in Service Layer." />
+    <MESSAGE value="updated TaskmanagementApplication" />
+    <MESSAGE value="updated ProcessEntity and TaskEntity." />
+    <MESSAGE value="updated TaskRepositoryImpl and MetricRepositoryImpl." />
+    <MESSAGE value="updated MetricRepository and ProcessRepository" />
+    <MESSAGE value="updated TaskRepositoryImpl." />
+    <MESSAGE value="updated target" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated target" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Auto_Import" timestamp="1581589367348">
@@ -516,90 +554,114 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="100" y="103" width="1169" height="525" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1580752233297" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1581591487475">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1582183655309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581591487475" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582183655309" />
     <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581578495800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="230" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1581578495800" />
+    <state x="456" y="223" width="478" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582183900477">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="456" y="223" width="478" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1582183900477" />
     <state x="479" y="245" width="417" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1580385166266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" width="417" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1580385166266" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1581603585264">
+    <state x="378" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582185109420">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581603585264" />
+    <state x="378" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1582185109420" />
+    <state x="772" y="46" key="#xdebugger.evaluate" timestamp="1581679846783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="772" y="46" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1581679846783" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1582186312100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582186312100" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1580897703686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580897703686" />
-    <state width="1323" height="402" key="GridCell.Tab.0.bottom" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.0.center" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.0.center" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.0.left" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.0.left" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.0.right" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.0.right" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.1.bottom" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.1.bottom" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.1.center" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.1.center" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.1.left" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.1.left" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="402" key="GridCell.Tab.1.right" timestamp="1581663747872">
+    <state width="1323" height="247" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.1.right" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="402" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1581663747872" />
-    <state width="1323" height="224" key="GridCell.Tab.2.bottom" timestamp="1581600293855">
+    <state width="1323" height="247" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.2.bottom" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581600293855" />
-    <state width="1323" height="224" key="GridCell.Tab.2.center" timestamp="1581600293855">
+    <state width="1323" height="247" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.2.center" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1581600293855" />
-    <state width="1323" height="224" key="GridCell.Tab.2.left" timestamp="1581600293855">
+    <state width="1323" height="247" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.2.left" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1581600293855" />
-    <state width="1323" height="224" key="GridCell.Tab.2.right" timestamp="1581600293855">
+    <state width="1323" height="247" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
+    <state width="1323" height="247" key="GridCell.Tab.2.right" timestamp="1582185655893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1581600293855" />
+    <state width="1323" height="247" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1582185655893" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1580467148945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1580467148945" />
+    <state width="541" height="488" key="SwitcherDM" timestamp="1582185598153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="541" height="488" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1582185598153" />
+    <state x="435" y="68" key="VCS.ChangeListViewerDialog" timestamp="1582095729485">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="68" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1582095729485" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1580902323151">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580902323151" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1581679578065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1581679578065" />
     <state x="438" y="209" key="cloudConfig.SelfSettingsDialog" timestamp="1580902447955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="209" key="cloudConfig.SelfSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580902447955" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1581663050162">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582180808241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581663050162" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582180808241" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580286537972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -608,30 +670,35 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="425" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1581592592806" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580901949617">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1582182560113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580901949617" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580457566377">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582182560113" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582184775945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580457566377" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1582184775945" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/MetricRepositoryImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/TaskRepositoryImpl.java</url>
-          <line>67</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/repository/impl/MetricRepositoryImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kushibrahim/taskmanagement/service/impl/ProcessTaskManager.java</url>
+          <line>25</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
