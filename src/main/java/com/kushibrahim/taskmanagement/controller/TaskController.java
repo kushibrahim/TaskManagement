@@ -1,6 +1,7 @@
 package com.kushibrahim.taskmanagement.controller;
 
 import com.kushibrahim.taskmanagement.model.dto.TaskDto;
+import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.model.request.CreateTaskRequest;
 import com.kushibrahim.taskmanagement.service.TaskService;
 import org.springframework.http.ResponseEntity;
@@ -33,9 +34,9 @@ public class TaskController {
         return ResponseEntity.ok(taskService.assigneeTask(taskId, assigneeId));
     }
 
-    @PostMapping("/{taskId}")
-    public ResponseEntity<ResponseEntity<TaskDto>> updateTask(@PathVariable Integer taskId) {
-        return ResponseEntity.ok(taskService.updateTask(taskId));
+    @PostMapping("/updateTask")
+    public ResponseEntity<ResponseEntity<TaskDto>> updateTask(@RequestBody TaskEntity task) {
+        return ResponseEntity.ok(taskService.updateTask(task));
     }
 
     @PostMapping("/createTask")
