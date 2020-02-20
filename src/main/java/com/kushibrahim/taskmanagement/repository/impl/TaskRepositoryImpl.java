@@ -35,11 +35,8 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
     }
 
     @Override
-    public TaskEntity updateTask(Integer taskId) {
-        Session session = entityManager.unwrap(Session.class);
-        TaskEntity taskEntity = session.get(TaskEntity.class, taskId);
-        session.saveOrUpdate(taskEntity);
-        return taskEntity;
+    public TaskEntity updateTask(TaskEntity task) {
+        return super.save(task);
     }
 
     @Override
@@ -65,4 +62,5 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
          List<TaskEntity> entities = entityManager.createQuery("select t from TaskEntity t where t.taskActualEndDate > t.taskOriginalEndDate ").getResultList();
         return entities;
     }
+
 }

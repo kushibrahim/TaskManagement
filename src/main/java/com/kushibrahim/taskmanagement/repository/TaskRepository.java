@@ -10,8 +10,9 @@ import java.util.List;
 public interface TaskRepository extends JpaRepository<TaskEntity, Integer> {
 
     TaskEntity assigneeTask(Integer taskId, Integer assigneeId);
-    TaskEntity updateTask(Integer taskId);
+    TaskEntity updateTask(TaskEntity task);
     CreateTaskRequest createRequest(CreateTaskRequest request);
 
     List<TaskEntity> getAllOverDueTask();
+
 }
