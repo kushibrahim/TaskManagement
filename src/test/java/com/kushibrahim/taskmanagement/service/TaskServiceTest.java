@@ -115,10 +115,9 @@ public class TaskServiceTest {
         TaskEntity taskEntity = new TaskEntity();
         taskEntity.setTaskID(TASK_ID);
 
-        when(taskRepository.updateTask(taskEntity.getTaskID())).thenReturn(taskEntity);
-        ResponseEntity<TaskDto> response = taskService.updateTask(taskEntity.getTaskID());
+        when(taskRepository.updateTask(taskEntity)).thenReturn(taskEntity);
+        ResponseEntity<TaskDto> response = taskService.updateTask(taskEntity);
         TaskDto taskDto = response.getBody();
-        //This place will be updated
         assertEquals(TASK_ID, taskDto.getTaskID());
     }
 }
