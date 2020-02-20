@@ -1,12 +1,15 @@
 package com.kushibrahim.taskmanagement.repository.impl;
 
 import com.kushibrahim.taskmanagement.model.entity.MetricEntity;
+import com.kushibrahim.taskmanagement.model.entity.ProcessEntity;
+import com.kushibrahim.taskmanagement.model.enumerator.MetricType;
+import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import com.kushibrahim.taskmanagement.repository.MetricRepository;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class MetricRepositoryImpl extends SimpleJpaRepository<MetricEntity,Integer> implements MetricRepository {
 
@@ -19,9 +22,10 @@ public class MetricRepositoryImpl extends SimpleJpaRepository<MetricEntity,Integ
 
     @Override
     public List<MetricEntity> getAllDoneSuccessMetrics() {
-        List<MetricEntity> entities = this.findAll();
-        return entities.stream()
-                .filter(x -> x.getMetricType().name().equals("DONE"))
-                .collect(Collectors.toList());
+        Query query = entityManager.createQuery("select m from MetricEntity m where  m.metricType = :type ");
+        query.setParameter("type", MetricType.DONE);
+        List<MetricEntity> entities = query.getResultList();
+        return entities;
     }
+
 }

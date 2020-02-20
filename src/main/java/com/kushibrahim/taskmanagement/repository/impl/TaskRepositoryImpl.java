@@ -63,10 +63,8 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
 
     @Override
     public List<TaskEntity> getAllOverDueTask() {
-        List<TaskEntity> entities = this.findAll();
-        return entities.stream()
-                .filter(x -> x.getTaskOriginalEndDate().after(x.getTaskActualEndDate()))
-                .collect(Collectors.toList());
+         List<TaskEntity> entities = entityManager.createQuery("select t from TaskEntity t where t.taskActualEndDate > t.taskOriginalEndDate ").getResultList();
+        return entities;
     }
 
 }
