@@ -11,7 +11,6 @@ import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer> implements TaskRepository {
@@ -66,5 +65,4 @@ public class TaskRepositoryImpl extends SimpleJpaRepository<TaskEntity, Integer>
          List<TaskEntity> entities = entityManager.createQuery("select t from TaskEntity t where t.taskActualEndDate > t.taskOriginalEndDate ").getResultList();
         return entities;
     }
-
 }
