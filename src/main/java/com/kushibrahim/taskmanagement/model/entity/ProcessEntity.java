@@ -2,8 +2,12 @@ package com.kushibrahim.taskmanagement.model.entity;
 
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.*;
+
 import javax.persistence.*;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.util.Set;
 
 @Entity
 @Table(name = "process")
@@ -41,4 +45,6 @@ public class ProcessEntity {
     @JoinColumn(name = "teamLeadID")
     private TeamLeadEntity teamLeadID;
 
+    @OneToMany(mappedBy = "processID")
+    private Set<TaskEntity> tasks;
 }

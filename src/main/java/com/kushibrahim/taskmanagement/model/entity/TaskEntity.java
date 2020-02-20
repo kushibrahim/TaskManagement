@@ -5,7 +5,7 @@ import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import java.util.Date;
+import java.util.*;
 
 @Entity
 @Table(name = "task")
@@ -59,4 +59,7 @@ public class TaskEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teamLeadID")
     private TeamLeadEntity teamLeadEntityID;
+
+    @OneToMany(mappedBy = "taskID")
+    private List<MetricEntity> metrics;
 }
