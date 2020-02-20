@@ -36,7 +36,7 @@ public class MetricController {
     }
 
     @GetMapping("/completedmetrics")
-    public List<MetricDto> getAllDoneSuccessMetrics(){
-        return metricService.getAllDoneSuccessMetrics();
+    public ResponseEntity<List<MetricDto>> getAllDoneSuccessMetrics(){
+        return ResponseEntity.ok(metricService.getAllDoneSuccessMetrics());
     }
 }
