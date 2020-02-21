@@ -90,12 +90,13 @@ public class MetricServiceTest {
 
         when(metricRepository.save(metricEntity)).thenReturn(metricEntity);
         ResponseEntity<MetricDto> response = metricService.saveMetric(metricEntity);
+        MetricDto metricDto = response.getBody();
 
-        assertEquals(METRIC_ID, response.getBody().getMetricID());
-        assertEquals(METRIC_TYPE, response.getBody().getMetricType());
-        assertEquals(METRIC_START_DATE, response.getBody().getMetricStartDate());
-        assertEquals(METRIC_ACTUAL_ENDDATE, response.getBody().getMetricActualEndDate());
-        assertEquals(METRIC_ORIGINAL_ENDDATE, response.getBody().getMetricOriginalEndDate());
+        assertEquals(METRIC_ID, metricDto.getMetricID());
+        assertEquals(METRIC_TYPE, metricDto.getMetricType());
+        assertEquals(METRIC_START_DATE, metricDto.getMetricStartDate());
+        assertEquals(METRIC_ACTUAL_ENDDATE, metricDto.getMetricActualEndDate());
+        assertEquals(METRIC_ORIGINAL_ENDDATE, metricDto.getMetricOriginalEndDate());
 
     }
 }
