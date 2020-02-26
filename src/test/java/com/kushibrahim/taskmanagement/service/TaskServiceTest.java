@@ -142,7 +142,7 @@ public class TaskServiceTest {
         taskEntity.setTaskOriginalEndDate(TASK_ORIGINAL_ENDDATE);
 
         when(taskRepository.getAllOverDueTask()).thenReturn(Collections.singletonList(taskEntity));
-        List<TaskDto> response = taskService.getAllOverDueTask();
+        List<TaskDto> response = taskService.getAllOverDueTask().getBody();
 
         TaskDto taskDto = response.get(0);
 
