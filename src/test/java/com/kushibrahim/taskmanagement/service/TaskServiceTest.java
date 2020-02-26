@@ -6,6 +6,7 @@ import com.kushibrahim.taskmanagement.model.entity.DeveloperEntity;
 import com.kushibrahim.taskmanagement.model.entity.TaskEntity;
 import com.kushibrahim.taskmanagement.model.enumerator.Status;
 import com.kushibrahim.taskmanagement.repository.TaskRepository;
+import com.kushibrahim.taskmanagement.service.impl.TaskServiceImpl;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -34,7 +35,7 @@ public class TaskServiceTest {
     private static final Date TASK_ACTUAL_ENDDATE = new Date("2012/12/25");
 
     @InjectMocks
-    private TaskService taskService;
+    private TaskServiceImpl taskService;
 
     @Mock
     private TaskRepository taskRepository;
@@ -119,5 +120,29 @@ public class TaskServiceTest {
         ResponseEntity<TaskDto> response = taskService.updateTask(taskEntity);
         TaskDto taskDto = response.getBody();
         assertEquals(TASK_ID, taskDto.getTaskID());
+    }
+
+    @Test
+    public void whenGetOverDueTask_thenReturnTaskDto(){
+        TaskEntity taskEntity = new TaskEntity();
+        taskEntity.setTaskID(TASK_ID);
+        taskEntity.setTaskName(TASK_NAME);
+        taskEntity.setTaskStatus(TASK_STATUS);
+        taskEntity.setTaskStartDate(TASK_START_DATE);
+        taskEntity.setTaskActualEndDate(TASK_ACTUAL_ENDDATE);
+        taskEntity.setTaskOriginalEndDate(TASK_ORIGINAL_ENDDATE);
+
+        when(taskRepository.getAllOverDueTask()).thenReturn(Collections.singletonList(taskEntity));
+        List<TaskDto> response = taskService.getAllOverDueTask();
+
+        TaskDto taskDto = response.get(0);
+
+        assertEquals(TASK_ID, taskDto.getTaskID());
+        assertEquals(TASK_NAME, taskDto.getTaskName());
+        assertEquals(TASK_STATUS, taskDto.getTaskStatus());
+        assertEquals(TASK_ACTUAL_ENDDATE, taskDto.getTaskActualEndDate());
+        assertEquals(TASK_ORIGINAL_ENDDATE, taskDto.getTaskOriginalEndDate());
+        assertEquals(TASK_START_DATE, taskDto.getTaskStartDate());
+
     }
 }
