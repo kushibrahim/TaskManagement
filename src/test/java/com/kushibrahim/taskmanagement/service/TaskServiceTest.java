@@ -110,16 +110,25 @@ public class TaskServiceTest {
         assertEquals(TASK_START_DATE, response.getBody().getTaskStartDate());
     }
 
-    @Disabled
     @Test
     public void whenUpdateTask_thenReturnTaskDto(){
         TaskEntity taskEntity = new TaskEntity();
         taskEntity.setTaskID(TASK_ID);
+        taskEntity.setTaskName(TASK_NAME);
+        taskEntity.setTaskStatus(TASK_STATUS);
+        taskEntity.setTaskStartDate(TASK_START_DATE);
+        taskEntity.setTaskActualEndDate(TASK_ACTUAL_ENDDATE);
+        taskEntity.setTaskOriginalEndDate(TASK_ORIGINAL_ENDDATE);
 
         when(taskRepository.updateTask(taskEntity)).thenReturn(taskEntity);
         ResponseEntity<TaskDto> response = taskService.updateTask(taskEntity);
         TaskDto taskDto = response.getBody();
         assertEquals(TASK_ID, taskDto.getTaskID());
+        assertEquals(TASK_NAME, taskDto.getTaskName());
+        assertEquals(TASK_STATUS, taskDto.getTaskStatus());
+        assertEquals(TASK_ACTUAL_ENDDATE, taskDto.getTaskActualEndDate());
+        assertEquals(TASK_ORIGINAL_ENDDATE, taskDto.getTaskOriginalEndDate());
+        assertEquals(TASK_START_DATE, taskDto.getTaskStartDate());
     }
 
     @Test
