@@ -66,9 +66,13 @@ class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public List<TaskDto> getAllOverDueTask() {
+    public ResponseEntity<List<TaskDto>> getAllOverDueTask() {
         List<TaskEntity> entities = taskRepository.getAllOverDueTask();
-        return taskConverter.convertListTaskDto(entities);
+        if(entities == null){
+            return new ResponseEntity<>(taskConverter.convertListTaskDto(entities), HttpStatus.NOT_FOUND);
+        }else{
+            return new ResponseEntity<>(taskConverter.convertListTaskDto(entities), HttpStatus.OK);
+        }
     }
 
 }

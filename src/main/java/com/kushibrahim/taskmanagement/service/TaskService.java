@@ -15,5 +15,5 @@ public interface TaskService {
     ResponseEntity<TaskDto> updateTask(TaskEntity task);
     ResponseEntity<TaskDto> createTask(CreateTaskRequest request);
 
-    List<TaskDto> getAllOverDueTask();
+    ResponseEntity<List<TaskDto>> getAllOverDueTask();
 }
