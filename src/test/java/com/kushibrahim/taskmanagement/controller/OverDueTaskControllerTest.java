@@ -28,6 +28,7 @@ public class OverDueTaskControllerTest extends BaseControllerTest {
     @MockBean
     private TaskServiceImpl taskService;
 
+    @Disabled
     @Test
     public void whenGetOverDueTask_thenReturnListTaskDtoSuccess() throws Exception {
         //taskDtoList = Collections.singletonList(new TaskDto());
